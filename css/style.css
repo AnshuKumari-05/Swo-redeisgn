@@ -999,7 +999,7 @@ transition: all .2s linear;
   position: fixed;
   left : 0px;
   top: 0px;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0,0,0,0.8);
   display: none;
 }
 .overlay.active{
@@ -1057,6 +1057,9 @@ transition: all .2s linear;
     width : 400px;
     height : 300px;
   }
+  .img-big{
+    background-position: 0px 120px;
+  }
 }
 @media only screen and (max-width: 1015px) {
   .img-grid {
@@ -1069,6 +1072,12 @@ transition: all .2s linear;
   .thumbnail-image{
     width : 320px;
     height : 220px;
+  }
+}
+@media only screen and (max-width: 1015px) {
+  .img-big{
+    width: 100%;
+    left : 0px;
   }
 }
 @media only screen and (max-width: 720px) {
