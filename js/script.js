@@ -23,3 +23,18 @@ $(document).ready(function(){
   let section = searchParams.get('tab');
   $('#'+section).toggleClass('active');
 });
+
+// POPUP INTERACTIONS
+function popup(i)
+{
+  $('.overlay').eq(i).toggleClass("active");
+}
+
+// IMAGE Gallery interactions
+$(document).ready(function(){
+  $(".img-grid .thumbnail").on("click",function(){
+    let image = $(this).find(".thumbnail-image").attr("style");
+    $(".img-big").attr("style",image);
+    popup(0);
+  });
+});

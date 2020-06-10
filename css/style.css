@@ -226,7 +226,7 @@ section{
 box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.2);
 }
 .gallery-tab-submenu{
-  top : 55vh;
+  top : 60vh;
 }
 .submenu>li
 {
@@ -917,6 +917,189 @@ box-shadow: 3px 10px 15px -15px rgba(0,0,0,0.19);
   font-size : 14px;
   padding : 5px 15px;
   border-radius: 5px;
+}
+/*------------------------------------------------------------------------------
+                  Forms and Undertakings (Student Corner)
+-------------------------------------------------------------------------------*/
+#undertaking-section button{
+  margin : 0px;
+  width : 100%;
+}
+/*------------------------------------------------------------------------------
+                              Gallery
+-------------------------------------------------------------------------------*/
+#institute-section{
+  padding : 0px 30px;
+}
+.img-grid{
+  width: 100%;
+  margin: 0px auto;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.hidden{
+  display: none;
+}
+.thumbnail{
+  width : 400px;
+  height : 300px;
+  margin : 10px;
+  border : 12px solid white;
+  overflow: hidden;
+  position: relative;
+  -webkit-box-shadow: 0px 0px 9px -3px rgba(0,0,0,0.24);
+-moz-box-shadow: 0px 0px 9px -3px rgba(0,0,0,0.24);
+box-shadow: 0px 0px 9px -3px rgba(0,0,0,0.24);
+transition: all .2s linear;
+}
+.thumbnail:hover .thumbnail-body{
+  bottom : 0px;
+}
+.thumbnail-image{
+  width : 400px;
+  height : 300px;
+  background-size : 100% 100%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.thumbnail-body{
+  width : 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  bottom: -100px;
+  padding: 10px 0px;
+  transition: all linear .2s;
+}
+.thumbnail-body h4{
+  color : #444;
+  font-size: 15px;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+.thumbnail-body p{
+  color : #999;
+  line-height: 5px;
+}
+.thumbnail span
+{
+  padding: 1px 18px;
+  background: #729bbb;
+  color : white;
+  border-radius: 100px;
+}
+.overlay{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left : 0px;
+  top: 0px;
+  background: rgba(0,0,0,0.6);
+  display: none;
+}
+.overlay.active{
+  display: block;
+}
+.img-big{
+  position: relative;
+  position: -1;
+  width : 100% - 100px;
+  height : 100vh;
+  left : 100px;
+  .background: white;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.overlay .close-icon{
+  height: 20px;
+  width: 20px;
+  position: relative;
+  z-index: 2;
+  float: right;
+  margin: 20px;
+  background-image: url('../media/close.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+@media only screen and (max-width: 1827px) {
+  .thumbnail{
+    width : 380px;
+    height : 280px;
+  }
+  .thumbnail-image{
+    width : 380px;
+    height : 280px;
+  }
+}
+@media only screen and (max-width: 1755px) {
+  .thumbnail{
+    width : 350px;
+    height : 250px;
+  }
+  .thumbnail-image{
+    width : 350px;
+    height : 250px;
+  }
+}
+@media only screen and (max-width: 1270px) {
+  .thumbnail{
+    width : 400px;
+    height : 300px;
+  }
+  .thumbnail-image{
+    width : 400px;
+    height : 300px;
+  }
+}
+@media only screen and (max-width: 1015px) {
+  .img-grid {
+    width : 700px;
+  }
+  .thumbnail{
+    width : 320px;
+    height : 220px;
+  }
+  .thumbnail-image{
+    width : 320px;
+    height : 220px;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .img-grid {
+    width : 500px;
+  }
+  .thumbnail
+  {
+    height : 374px;
+  }
+  .thumbnail{
+    width : 450px;
+    height : 350px;
+  }
+  .thumbnail-image{
+    width : 450px;
+    height : 350px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .img-grid{
+    width : 100%;
+  }
+  .thumbnail{
+    width : 100%;
+    height : 300px;
+  }
+  .thumbnail-image{
+    width : 100%;
+    height : 300px;
+  }
 }
 /*------------------------------------------------------------------------------
                                 Tables Media Queries
