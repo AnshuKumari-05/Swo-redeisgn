@@ -21,6 +21,9 @@ a{
 a:hover{
   text-decoration : none;
 }
+button{
+  cursor: pointer;
+}
 li{
   list-style: none;
 }
@@ -37,9 +40,11 @@ body
   position: relative;
   overflow-x: hidden;
 }
+
 section{
   width : 95%;
   margin : 50px auto 0px auto;
+  position: relative;
 }
 
 /*
@@ -130,6 +135,34 @@ section{
 #icon-6
 {
   background-image: url('../media/photo.png');
+}
+#icon-7
+{
+  background-image: url('../media/user.png');
+}
+#icon-8
+{
+  background-image: url('../media/submit.png');
+}
+#icon-9
+{
+  background-image: url('../media/renewal-scholar.png');
+}
+#icon-10
+{
+  background-image: url('../media/law.png');
+}
+#icon-11
+{
+  background-image: url('../media/university.png');
+}
+#icon-12
+{
+  background-image: url('../media/time.png');
+}
+#icon-13
+{
+  background-image: url('../media/calendar.png');
 }
 #nav-icon3{
   width: 60px;
@@ -296,7 +329,10 @@ box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.2);
   height: 80px;
   width: 80px;
   border-radius: 100%;
-  background: pink;
+  background-image: url('../media/person.png');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .profile-submenu
 {
@@ -547,7 +583,10 @@ transition: .25s ease-in-out;
   height: 130px;
   width: 130px;
   border-radius: 100%;
-  background-color: pink;
+  background: url('../media/person.png');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
   margin: 0px auto;
   margin-top: 80px;
 }
@@ -1002,6 +1041,9 @@ transition: all .2s linear;
   background: rgba(0,0,0,0.8);
   display: none;
 }
+/*------------------------------------------------------------------------------
+                                     OVERLAY
+-------------------------------------------------------------------------------*/
 .overlay.active{
   display: block;
 }
@@ -1028,6 +1070,68 @@ transition: all .2s linear;
   background-size: 100% 100%;
   cursor: pointer;
 }
+.overlay .popup-header{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.overlay .popup-header > h4{
+  margin : 0px;
+}
+.overlay .popup-header > .close-icon{
+  margin : 0px;
+}
+label{
+  margin : 0px;
+  color : #aaa;
+}
+input[type=text], input[type=password], input[type=email],select
+{
+  width : 100%;
+  padding : 0px 10px;
+  height : 35px;
+  margin : 5px 0px;
+  background: #e9ecf0;
+  border : 0px;
+  border-radius: 5px;
+}
+input[type=submit]
+{
+  background: #323a52;
+  color : white;
+  border : none;
+  border-radius: 5px;
+  margin : 5px auto;
+  padding : 5px 30px;
+}
+.overlay .form-note{
+  margin-top : 50px;
+  font-size: 14px;
+  color : #aaa;
+}
+/* #student-login-popup, #department-login-popup
+{
+  max-width : 400px;
+  background: white;
+  border-radius: 10px;
+  min-height : 100px;
+  margin : 50px auto 0px auto;
+  padding: 30px 20px;
+} */
+.overlay > form{
+  max-width : 400px;
+  background: white;
+  border-radius: 10px;
+  min-height : 100px;
+  margin : 50px auto 0px auto;
+  padding: 30px 20px;
+}
+
+/*------------------------------------------------------------------------------
+                      Media Query for Image Gallery
+-------------------------------------------------------------------------------*/
 @media only screen and (max-width: 1827px) {
   .thumbnail{
     width : 380px;
@@ -1108,6 +1212,115 @@ transition: all .2s linear;
   .thumbnail-image{
     width : 100%;
     height : 300px;
+  }
+}
+/*------------------------------------------------------------------------------
+                                  Student Profile
+-------------------------------------------------------------------------------*/
+
+#student-profile .academic-info{
+  width : 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+#student-profile .profile-intro>p{
+  color : #aaa;
+}
+#student-profile .edit-profile{
+  display: flex;
+}
+#student-profile .edit-profile button{
+  margin : 20px 10px 0px 0px;
+  width: 200px;
+}
+.academic-info .profile-pic{
+  width : 180px;
+  height : 180px;
+  border-radius: 100%;
+  background-image: url('../media/person.png');
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.academic-info .profile-intro
+{
+  margin : 0px 30px;
+}
+.academic-info .profile-intro > h4{
+  margin : 0px;
+}
+.academic-info .profile-intro > ul{
+  margin-top : 20px;
+}
+.academic-icons{
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.academic-icons > div{
+  display: flex;
+  margin : 0px 40px;
+}
+.academic-icon{
+  width : 50px;
+  height: 50px;
+  margin : 0px 10px;
+  opacity: .4;
+  background-position: center;
+  background-size: 100% 100%;
+}
+#personal-info{
+  padding : 20px;
+  background: white;
+  border-radius: 10px;
+}
+#student-profile > section{
+  margin : 20px auto 0px auto;
+}
+.personal-info > .row{
+  margin : 10px;
+}
+.personal-info b{
+  color : #aaa;
+}
+.print-profile{
+  width: 100%;
+  height: 40px;
+  color : white;
+  font-weight: 700;
+  border-radius: 10px;
+  background: #2ecc71;
+  border: 0px;
+}
+/*------------------------------------------------------------------------------
+                        Student Profile Media Queries
+-------------------------------------------------------------------------------*/
+@media screen and (max-width : 637px)
+{
+  .academic-info .profile-intro
+  {
+    margin : 20px;
+  }
+  .academic-info .profile-intro > h4, .academic-info .profile-intro > p{
+    text-align: center;
+  }
+  .academic-icons > div{
+    display: flex;
+    margin : 0px 20px;
+  }
+}
+@media screen and (max-width : 500px)
+{
+  .academic-icon
+  {
+    width : 40px;
+    height: 40px;
+    margin : 0px 5px;
+    background-position: center;
+    background-size: 100% 100%;
   }
 }
 /*------------------------------------------------------------------------------

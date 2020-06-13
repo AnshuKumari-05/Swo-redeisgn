@@ -37,7 +37,6 @@ $(document).ready(function(){
   $('a').on("click",function(e){
     let cur_url = window.location.href; // current url
     let cur_link = cur_url.split('?')[0].split('/')[4]; // current html file
-    console.log(cur_link);
     let url = $(this).attr('href'); // url to redirect
     let red_link = url.split('?')[0]; // html file to load.
     let red_tab = url.split('?')[1].split('=')[1]; // section to load.
@@ -62,6 +61,14 @@ $(document).ready(function(){
   $(".img-grid .thumbnail").on("click",function(){
     let image = $(this).find(".thumbnail-image").attr("style");
     $(".img-big").attr("style",image);
-    popup(0);
+    popup(2);
+  });
+});
+
+$(document).ready(function(){
+  $('.dashboard-menu .menu-icon').on("click", function(){
+    $('.dashboard-menu .menu-icon').removeClass('active');
+    console.log($(this));
+    $(this).addClass('active');
   });
 });
