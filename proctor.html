@@ -117,9 +117,21 @@
           <div class="profile">
             <ul class="profile-submenu">
 							<li>
-                <a href="myprofile.php">
+                <a href="studentprofile.html?tab=student-profile">
                   <p>Profile</p>
                   <div id="profile-menu-profile" class="profile-submenu-icon"></div>
+                </a>
+              </li>
+              <li>
+                <a onclick="popup(0);" href="#">
+                  <p>Student Login</p>
+                  <div id="profile-menu-student-login" class="profile-submenu-icon"></div>
+                </a>
+              </li>
+              <li>
+                <a onclick="popup(1);" href="#">
+                  <p>Department Login</p>
+                  <div id="profile-menu-department-login" class="profile-submenu-icon"></div>
                 </a>
               </li>
               <li>
@@ -555,6 +567,40 @@
       <!-- End of Body Container -->
     </div>
     <!-- End of Right side body -->
+
+    <!-- Overlay and Popups -->
+    <div class="overlay">
+      <form id="student-login-popup">
+        <div class="popup-header">
+          <h4>Student Login</h4>
+          <div class="close-icon" onclick="popup(0)"></div>
+        </div>
+        <input type="text" name="username" value="" placeholder="Registration No."/>
+        <input type="password" name="password" value="" placeholder="Password"/>
+        <input type="submit" value="Login"/>
+        <p class="form-note">
+          NOTE: Password for first time login:
+          <br>
+          1. Your Date of Birth in DDMMYYYY Format
+          <br>
+          2. For M.Tech. Registration number starting from 2018: MMDDYYYY or MDYYYY
+          <br><br>
+          For problem in login write to deansw@mnnit.ac.in with Registration number and DOB
+        </p>
+      </form>
+    </div>
+    <div class="overlay">
+      <form id="department-login-popup">
+        <div class="popup-header">
+          <h4>Department Login</h4>
+          <div class="close-icon" onclick="popup(1)"></div>
+        </div>
+        <input type="text" name="username" value="" placeholder="Username"/>
+        <input type="password" name="password" value="" placeholder="Password"/>
+        <input type="submit" value="Login"/>
+      </form>
+    </div>
+    <!-- End of Overlay and Popups -->
 
 		<!-- Mobile Side Bar -->
 		<div class="mobile-sidebar">

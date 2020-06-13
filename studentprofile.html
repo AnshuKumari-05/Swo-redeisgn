@@ -1,0 +1,442 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Welfare Office, MNNIT</title>
+    <link rel="icon" href="media/logo-short.png">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <!-- Desktop Side bar -->
+    <div class="sidebar">
+      <!-- hamburger -->
+      <div id="nav-icon3">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <!-- End of hamburger -->
+
+      <!-- Desktop Sidemenu list -->
+      <ul class="side-menu dashboard-menu">
+        <!-- Profile icon -->
+        <li>
+        <a href="studentprofile.html?tab=student-profile">
+          <div class="menu-icon active" id="icon-7"></div>  <!-- Active Icon -->
+          <p class="menu-option">Profile</p>
+        </a>
+      </li>
+      <!-- End of Profile link Icon -->
+
+      <!-- Apply fresh Scholarship -->
+        <li>
+        <a href="studentprofile.html?tab=fresh-scholarship">
+          <div class="menu-icon" id="icon-8"></div>
+          <p class="menu-option">Apply Fresh Scholarship</p>
+        </a>
+      </li>
+      <!-- End of Apply Fresh Scholarship link Icon -->
+
+      <!-- Applied Scholarship icon -->
+        <li>
+        <a href="studentprofile.html?tab=applied-scholarship">
+          <div class="menu-icon" id="icon-2"></div>
+          <p class="menu-option">Applied Scholarship</p>
+        </a>
+      </li>
+      <!-- End of Applied Scholarship -->
+
+      <!-- Renewal of granted Scholarship -->
+        <li>
+        <a href="studentprofile.html?tab=renewal-scholarship">
+          <div class="menu-icon" id="icon-9"></div>
+          <p class="menu-option">Renewal of granted Scholarship</p>
+        </a>
+      </li>
+      <!-- End of Renewal of granted Scholarship icon -->
+
+      <!-- Punishment Icon -->
+        <li>
+        <a href="studentprofile.html?tab=punishment-details">
+          <div class="menu-icon" id="icon-10"></div>
+          <p class="menu-option">Punishment Details</p>
+        </a>
+      </li>
+      <!-- End of Punishment link icon -->
+
+      <!-- No Dues Application -->
+        <li>
+        <a href="studentprofile.html?tab=no-dues">
+          <div class="menu-icon" id="icon-5"></div>
+          <p class="menu-option">No Dues Application</p>
+        </a>
+      </li>
+      <!-- End of No Dues -->
+      </ul>
+      <!-- End of Desktop Sidemenu List -->
+    </div>
+    <!-- End of Desktop Side bar -->
+
+    <!-- Right Side Body -->
+    <div class="body">
+      <!-- Logo Header -->
+      <div class="header">
+          <a href="index.html"><div class="logo"></div></a>
+          <!-- Profile with submenu -->
+          <div class="profile">
+            <ul class="profile-submenu">
+							<li>
+                <a href="studentprofile.html?tab=student-profile">
+                  <p>Profile</p>
+                  <div id="profile-menu-profile" class="profile-submenu-icon"></div>
+                </a>
+              </li>
+              <li>
+                <a onclick="popup(2)" href="#">
+                  <p>Change Password<p>
+                  <div id="profile-menu-password" class="profile-submenu-icon"></div>
+                </a>
+              </li>
+              <!-- Display logout option only when logged in -->
+              <li>
+                <a href="logout.php">
+                  <p>Sign Out<p>
+                  <div id="profile-menu-signout" class="profile-submenu-icon"></div>
+                </a>
+              </li>
+              <!-- Display logout option only when loggd in -->
+            </ul>
+          </div>
+
+
+					<div class="moburger" id="nav-icon3">
+		        <span></span>
+		        <span></span>
+		        <span></span>
+		        <span></span>
+		      </div>
+          <!-- End of profile with submenu -->
+      </div>
+      <!-- End of Logo Header -->
+
+      <!-- Body Container -->
+      <div class="carousel-grid">
+        <!-- Start of Student Profile -->
+        <div id="student-profile">
+          <!-- Academic Information -->
+          <section>
+            <div class="academic-info">
+              <div class="profile-pic"></div>
+              <div class="profile-intro">
+                <h4>Ashish Kujur</h4>
+                <p>2019CA67</p>
+                <ul>
+                  <li><b>Department : </b>Computer Science and Engineering</li>
+                  <li><b>Programme : </b>MCA</li>
+                </ul>
+                <div class="edit-profile">
+                  <button onclick="popup(0);" type="button" class="btn-solid-blue" name="button">Change Profile Picture</button>
+                  <button onclick="popup(1);" type="button" class="btn-hollow" name="button">Edit Profile</button>
+                </div>
+              </div>
+             </div>
+              <div class="academic-icons">
+                <div>
+                  <div class="academic-icon" id="icon-11"></div>
+                  <div class="icon-desc">
+                    <b>Branch</b>
+                    <p>NA</p>
+                  </div>
+                </div>
+                <div>
+                  <div class="academic-icon" id="icon-12"></div>
+                  <div class="icon-desc">
+                    <b>Session</b>
+                    <p>2019-2022</p>
+                  </div>
+                </div>
+                <div>
+                  <div class="academic-icon" id="icon-13"></div>
+                  <div class="icon-desc">
+                    <b>Semester</b>
+                    <p>1</p>
+                  </div>
+                </div>
+              </div>
+          </section>
+          <!-- End of Academic Information -->
+
+          <!-- Personal Information -->
+          <section id="personal-info">
+            <h4>Personal Information</h4>
+            <div class="personal-info">
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <p><b>Date of Birth : </b>16/02/1995</p>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <p><b>Email : </b>ashish.xenon@gamil.com</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <p><b>Student Mob. : </b>8767865538</p>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <p><b>Gaurdian Mo : </b>8767865538</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <p><b>Adhaar Card No. : </b>8767865538</p>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <p><b>Religion : </b>Christian</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <b>Parmanent Address : </b>
+                  <p>White House, Don Bosco ITI 2nd lane,
+                    Khoratoli, Kokar
+                    Ranchi-834001
+                    JR
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- End of Personal Information -->
+
+          <!-- Financial Information -->
+          <section id="personal-info">
+            <h4>Financial Information</h4>
+            <div class="personal-info">
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <p><b>Minority : </b>16/02/1995</p>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <p><b>Yearly Family Income : </b>ashish.xenon@gamil.com</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <p><b>Bank Name : </b>8767865538</p>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <p><b>Branch Name : </b>8767865538</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <p><b>Account No. : </b>8767865538</p>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <p><b>IFSC of Branch : </b>Christian</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- End of Financial Information -->
+
+          <!-- Button to Print Details -->
+          <section>
+            <button class="print-profile" type="button" name="button">Print Profile</button>
+          </section>
+          <!-- End Button to Print Details -->
+
+          <!-- Footer -->
+          <footer>
+            <p class="copyright-content">Copyright © <a href="http://www.mnnit.ac.in" style="color:white;">MNNIT</a> - All Rights Reserved Developed & Maintained By : Web Team</p>
+          </footer>
+          <!-- End of Footer -->
+        </div>
+        <!-- End of Student Profile -->
+
+        <!-- Start of Fresh Scholarship -->
+        <div id="fresh-scholarship">
+          <section>
+            <h2>Fresh Scholarship</h2>
+          </section>
+          <!-- Footer -->
+          <footer>
+            <p class="copyright-content">Copyright © <a href="http://www.mnnit.ac.in" style="color:white;">MNNIT</a> - All Rights Reserved Developed & Maintained By : Web Team</p>
+          </footer>
+          <!-- End of Footer -->
+        </div>
+        <!-- End of Fresh Scholarship -->
+      </div>
+      <!-- End of Body Container -->
+    </div>
+    <!-- End of Right side body -->
+
+    <!-- Overlay and Popups -->
+    <div class="overlay">
+      <form>
+        <div class="popup-header">
+          <h4>Change Profile Picture</h4>
+          <div class="close-icon" onclick="popup(0);"></div>
+        </div>
+        <input type="file" name="profile-pic" value=""/>
+        <input type="submit" value="upload"/>
+      </form>
+    </div>
+    <div class="overlay">
+      <form>
+        <div class="popup-header">
+          <h4>Update Information</h4>
+          <div class="close-icon" onclick="popup(1);"></div>
+        </div>
+        <input type="text" name="adhaar" value="" placeholder="Adhaar Number"/>
+        <input type="text" name="religion" value="" placeholder="Religion"/>
+        <label for="">Minority</label>
+        <select class="" name="minority">
+          <option value="no">No</option>
+          <option value="yes">Yes</option>
+        </select>
+        <input type="text" name="family-income" value="" placeholder="Yearly Family Income"/>
+        <input type="text" name="bank" value="" placeholder="Bank Name"/>
+        <input type="text" name="branch" value="" placeholder="Branch Name"/>
+        <input type="text" name="bank-account" value="" placeholder="Bank Account No."/>
+        <input type="text" name="bank-ifsc" value="" placeholder="IFSC Code"/>
+        <input type="submit" value="Update"/>
+      </form>
+    </div>
+    <div class="overlay">
+      <form>
+        <div class="popup-header">
+          <h4>Change Password</h4>
+          <div class="close-icon" onclick="popup(2);"></div>
+        </div>
+        <input type="password" name="password" value="" placeholder="Current Password">
+        <input type="password" name="new-password" value="" placeholder="New Password">
+        <input type="submit" value="Update Password"/>
+      </form>
+    </div>
+    <!-- End of Overlay and Popups -->
+
+		<!-- Mobile Side Bar -->
+		<div class="mobile-sidebar">
+			<div class="close-icon"></div>
+			<div class="profile-settings-container">
+				<a href="#"><div class="profile-settings"></div></a>
+				<div class="sub-settings-container">
+          <a href="#">
+						<div class="profile-submenu-icon" id="change-password"></div>
+						<p>Change Password</p>
+					</a>
+					<a href="#">
+						<div class="profile-submenu-icon" id="logout"></div>
+						<p>Sign Out</p>
+					</a>
+				</div>
+			</div>
+			<a href="index.html"><div class="card-header">Home</div></a>
+			<!-- Drop Down Accordion Code -->
+			<div id="accordion">
+        <div class="card">
+    			<div class="card-header" id="headingOne">
+        		<div class="collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Profile</div>
+    			</div>
+    			<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+      			<div class="card-body">
+							<ul>
+								<a href="studentprofile.html?tab=student-profile"><li>Profile</li></a>
+	            	<a href="studentprofile.html?tab=fresh-scholarship"><li>Apply Fresh Scholarship</li></a>
+	            	<a href="studentprofile.html?tab=applied-scholarship"><li>Applied Scholarship</li></a>
+	            	<a href="studentprofile.html?tab=renewal-scholarship"><li>Renewal of granted Scholarship</li></a>
+	            	<a href="studentprofile.html?tab=punishment-details"><li>Punishment Details</li></a>
+                <a href="studentprofile.html?tab=no-dues"><li>No Dues Application</li></a>
+							</ul>
+      			</div>
+    			</div>
+  			</div>
+  			<div class="card">
+    			<div class="card-header" id="headingTwo">
+        		<div class="collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Students Welfare Office</div>
+    			</div>
+    			<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+      			<div class="card-body">
+							<ul>
+								<a href="scholarship.html?tab=scholarship-section"><li>Scholarship and Fellowship</li></a>
+	            	<a href="scholarship.html?tab=medals-section"><li>Medals and Awards</li></a>
+	            	<a href="scholarship.html?tab=mediclaim-section"><li>Insuarance and Mediclaim</li></a>
+	            	<a href="scholarship.html?tab=antiRagging-section"><li>Anti-Ragging Initiatve</li></a>
+	            	<a href="scholarship.html?tab=counseling-section"><li>Counseling and Assistance</li></a>
+							</ul>
+      			</div>
+    			</div>
+  			</div>
+  			<div class="card">
+    			<div class="card-header" id="headingThree">
+        		<div class="collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Chief Proctor Office</div>
+    			</div>
+    			<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+      			<div class="card-body">
+							<ul>
+								<a href="proctor.html?tab=proctor-section"><li>About Chief Proctor Office</li></a>
+								<a href="proctor.html?tab=discipline-section"><li>Discipline and Proctorial Board</li></a>
+								<a href="proctor.html?tab=character-section"><li>I-Card and Character Certificate</li></a>
+							</ul>
+      			</div>
+    			</div>
+  			</div>
+  			<div class="card">
+    			<div class="card-header" id="headingFour">
+        		<div class="collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Chief Warden Office</div>
+    			</div>
+    			<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+      			<div class="card-body">
+        			<ul>
+                <a href="warden.html?tab=warden-section"><li>About Chief Warden Office</li></a>
+								<a href="warden.html?tab=team-section"><li>Team of Wardens</li></a>
+                <a href="warden.html?tab=hostelStructure-section"><li>Hostel Structure</li></a>
+								<a href="warden.html?tab=hostelManagement-section"><li>Hostel Management</li></a>
+                <a href="warden.html?tab=mess-section"><li>Mess Management</li></a>
+							</ul>
+      			</div>
+    			</div>
+  			</div>
+        <div class="card">
+    			<div class="card-header" id="headingFive">
+        		<div class="collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Student Activity Office</div>
+    			</div>
+    			<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+      			<div class="card-body">
+        			<ul>
+                <a href="student.html?tab=undertaking-section"><li>Undertakings and Forms</li></a>
+								<a href="http://www.mnnit.ac.in/index.php/notice-board" target="_blank"><li>Student Notice</li></a>
+							</ul>
+      			</div>
+    			</div>
+  			</div>
+        <div class="card">
+    			<div class="card-header" id="headingSix">
+        		<div class="collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">Gallery</div>
+    			</div>
+    			<div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+      			<div class="card-body">
+        			<ul>
+                <a href="gallery.html?tab=institute-section"><li>Institute Gallery</li></a>
+								<a href="gallery.html?tab=bharat-section"><li>Ek Bharat Shreshtha Bharat Gallery</li></a>
+                <a href="gallery.html?tab=voter-section"><li>Voter Awareness Paiting Competition Gallery</li></a>
+							</ul>
+      			</div>
+    			</div>
+  			</div>
+			</div>
+			<!-- End of Drop Down Accordion Code -->
+		</div>
+		<!-- End of Mobile Side Bar -->
+  	</body>
+		<script>
+
+		</script>
+  	<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+  	<script type="text/javascript" src="js/script.js"></script>
+	</html>
