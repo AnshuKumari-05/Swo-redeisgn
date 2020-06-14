@@ -548,6 +548,7 @@ footer
   width: 300px;
   position: fixed;
   overflow-y: scroll;
+  z-index: 1;
   right: -300px;
   background: white;
   height: 100vh;
@@ -1046,6 +1047,7 @@ transition: all .2s linear;
 -------------------------------------------------------------------------------*/
 .overlay.active{
   display: block;
+  z-index: 2;
 }
 .img-big{
   position: relative;
@@ -1215,7 +1217,7 @@ input[type=submit]
   }
 }
 /*------------------------------------------------------------------------------
-                                  Student Profile
+                          Student Profile(Stuent Details)
 -------------------------------------------------------------------------------*/
 
 #student-profile .academic-info{
@@ -1286,7 +1288,7 @@ input[type=submit]
 .personal-info b{
   color : #aaa;
 }
-.print-profile{
+.btn-wide-green{
   width: 100%;
   height: 40px;
   color : white;
@@ -1294,6 +1296,68 @@ input[type=submit]
   border-radius: 10px;
   background: #2ecc71;
   border: 0px;
+}
+/*------------------------------------------------------------------------------
+                            Student Profile(No dues)
+-------------------------------------------------------------------------------*/
+#no-dues .tile > button{
+  margin-top: 20px;
+}
+.no-due-activity,.no-due-activity h6{
+  font-size: 16px;
+}
+.no-due-activity .table-row{
+  position: relative;
+  z-index: 1;
+}
+.no-due-activity .activity-tab{
+  background: white;
+  margin-top : -20px;
+  box-sizing: border-box;
+  height: 0px;
+  overflow: hidden;
+  transition: all linear .2s;
+  position: relative;
+  overflow: none;
+  z-index: 0;
+  background : white;
+}
+.activity-tab > .list-header{
+display: flex;
+}
+.list-header h6{
+  font-size: 14px;
+  font-weight: bold;
+  color : #aaa;
+}
+.activity-tab.active{
+  padding : 20px 0px;
+  height: inherit;
+}
+.no-due-activity .activity-list{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+.no-due-activity .activity-list > li{
+  border-radius: 0px;
+  background: #e5eced52;
+  box-shadow: none;
+}
+.table-row .glyphicon{
+  opacity: .5;
+  font-size: 20px;
+}
+.drop-tab{
+  margin: 15px 0px;
+  cursor: pointer;
+}
+@media screen and (max-width : 440px)
+{
+  .no-due-activity .activity-list > li{
+    display: flex;
+    padding : 10px 0px;
+  }
 }
 /*------------------------------------------------------------------------------
                         Student Profile Media Queries
@@ -1314,13 +1378,12 @@ input[type=submit]
 }
 @media screen and (max-width : 500px)
 {
+  #student-profile .edit-profile button{
+    width: auto;
+  }
   .academic-icon
   {
-    width : 40px;
-    height: 40px;
-    margin : 0px 5px;
-    background-position: center;
-    background-size: 100% 100%;
+    display: none;
   }
 }
 /*------------------------------------------------------------------------------

@@ -23,6 +23,10 @@ $(document).ready(function(){
   let section = searchParams.get('tab');
   $('.carousel-grid > div').removeClass('active');
   $('#'+section).addClass('active');
+
+  // Sidemenu navigator for student/department profiles.
+  $('.dashboard-menu .menu-icon').removeClass('active');
+  $('.'+section).find('.menu-icon').addClass('active');
 });
 
 // Function to tab switch among same page sections
@@ -30,6 +34,10 @@ function switchTab(tab_id)
 {
   $('.carousel-grid > div').removeClass('active');
   $('#'+tab_id).addClass('active');
+
+  // Sidemenu navigator for student/department profiles
+  $('.dashboard-menu .menu-icon').removeClass('active');
+  $('.'+tab_id).find('.menu-icon').addClass('active');
 }
 
 // Function to check if the tab you want to access is in the same page or different page
@@ -65,10 +73,9 @@ $(document).ready(function(){
   });
 });
 
+//Toggle between no dues activities
 $(document).ready(function(){
-  $('.dashboard-menu .menu-icon').on("click", function(){
-    $('.dashboard-menu .menu-icon').removeClass('active');
-    console.log($(this));
-    $(this).addClass('active');
+  $(".drop-tab").on( "click", function(){
+    $(this).find(".activity-tab").toggleClass("active");
   });
 });

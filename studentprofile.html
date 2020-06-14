@@ -5,6 +5,9 @@
     <title>Student Welfare Office, MNNIT</title>
     <link rel="icon" href="media/logo-short.png">
 		<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -23,7 +26,7 @@
       <!-- Desktop Sidemenu list -->
       <ul class="side-menu dashboard-menu">
         <!-- Profile icon -->
-        <li>
+        <li class="student-profile">
         <a href="studentprofile.html?tab=student-profile">
           <div class="menu-icon active" id="icon-7"></div>  <!-- Active Icon -->
           <p class="menu-option">Profile</p>
@@ -32,7 +35,7 @@
       <!-- End of Profile link Icon -->
 
       <!-- Apply fresh Scholarship -->
-        <li>
+        <li class="fresh-scholarship">
         <a href="studentprofile.html?tab=fresh-scholarship">
           <div class="menu-icon" id="icon-8"></div>
           <p class="menu-option">Apply Fresh Scholarship</p>
@@ -41,7 +44,7 @@
       <!-- End of Apply Fresh Scholarship link Icon -->
 
       <!-- Applied Scholarship icon -->
-        <li>
+        <li class="applied-scholarship">
         <a href="studentprofile.html?tab=applied-scholarship">
           <div class="menu-icon" id="icon-2"></div>
           <p class="menu-option">Applied Scholarship</p>
@@ -50,7 +53,7 @@
       <!-- End of Applied Scholarship -->
 
       <!-- Renewal of granted Scholarship -->
-        <li>
+        <li class="renewal-scholarship">
         <a href="studentprofile.html?tab=renewal-scholarship">
           <div class="menu-icon" id="icon-9"></div>
           <p class="menu-option">Renewal of granted Scholarship</p>
@@ -59,7 +62,7 @@
       <!-- End of Renewal of granted Scholarship icon -->
 
       <!-- Punishment Icon -->
-        <li>
+        <li class="punishment-details">
         <a href="studentprofile.html?tab=punishment-details">
           <div class="menu-icon" id="icon-10"></div>
           <p class="menu-option">Punishment Details</p>
@@ -68,7 +71,7 @@
       <!-- End of Punishment link icon -->
 
       <!-- No Dues Application -->
-        <li>
+        <li class="no-dues">
         <a href="studentprofile.html?tab=no-dues">
           <div class="menu-icon" id="icon-5"></div>
           <p class="menu-option">No Dues Application</p>
@@ -124,7 +127,7 @@
 
       <!-- Body Container -->
       <div class="carousel-grid">
-        <!-- Start of Student Profile -->
+        <!--========================== Start of Student Profile ============================ -->
         <div id="student-profile">
           <!-- Academic Information -->
           <section>
@@ -245,7 +248,7 @@
 
           <!-- Button to Print Details -->
           <section>
-            <button class="print-profile" type="button" name="button">Print Profile</button>
+            <button class="btn-wide-green" type="button" name="button">Print Profile</button>
           </section>
           <!-- End Button to Print Details -->
 
@@ -255,9 +258,9 @@
           </footer>
           <!-- End of Footer -->
         </div>
-        <!-- End of Student Profile -->
+        <!--============================== End of Student Profile ======================================-->
 
-        <!-- Start of Fresh Scholarship -->
+        <!--============================ Start of Fresh Scholarship ====================================-->
         <div id="fresh-scholarship">
           <section>
             <h2>Fresh Scholarship</h2>
@@ -268,7 +271,237 @@
           </footer>
           <!-- End of Footer -->
         </div>
-        <!-- End of Fresh Scholarship -->
+        <!--=============================== End of Fresh Scholarship ====================================================-->
+
+        <!--================================================ Start of Applied Scholarship =======================================-->
+        <div id="applied-scholarship">
+          <section>
+            <h2>Applied Scholarship</h2>
+          </section>
+          <!-- Footer -->
+          <footer>
+            <p class="copyright-content">Copyright © <a href="http://www.mnnit.ac.in" style="color:white;">MNNIT</a> - All Rights Reserved Developed & Maintained By : Web Team</p>
+          </footer>
+          <!-- End of Footer -->
+        </div>
+        <!--========================================== End of Applied Scholarship ==========================================-->
+
+        <!--======================================= Start of Renewal Scholarship ========================================-->
+        <div id="renewal-scholarship">
+          <section>
+            <h2>Renew Scholarship</h2>
+          </section>
+          <!-- Footer -->
+          <footer>
+            <p class="copyright-content">Copyright © <a href="http://www.mnnit.ac.in" style="color:white;">MNNIT</a> - All Rights Reserved Developed & Maintained By : Web Team</p>
+          </footer>
+          <!-- End of Footer -->
+        </div>
+        <!--====================================== End of Renewal Scholarship ======================================-->
+
+        <!--================================= Start of Punishment Details =======================================-->
+        <div id="punishment-details">
+          <section>
+            <h2>Punishment Detail</h2>
+          </section>
+          <!-- Footer -->
+          <footer>
+            <p class="copyright-content">Copyright © <a href="http://www.mnnit.ac.in" style="color:white;">MNNIT</a> - All Rights Reserved Developed & Maintained By : Web Team</p>
+          </footer>
+          <!-- End of Footer -->
+        </div>
+        <!--============================== End of Punishment Detail ========================================= -->
+
+        <!-- =============================== Start of No Dues ============================================= -->
+        <div id="no-dues">
+          <section>
+            <h2>No Dues</h2>
+            <div class="tile about-tile">
+              <h4>About No Dues Process</h4>
+              <p>
+                During your curriculam the institute encourages you to participate and explore various academic
+                and extracarricular facilities to enhance your learning experience throughout your time in the MNNIT
+                campus. Therefore it is importent to clear out any pending dues you may have towards these departments
+                before you leave the institution. These Departments are : Library, Deputy Registarar(Accounts), Concerning
+                Hostel Warden and Chief Warden, Dean(Student Welfare)/Chief Proctor, Student Activity Centre(SAC)/Gymkhana,
+                Alumni Association and Concering Head of Department.
+                <br><br>
+                You can apply for no dues here at the time of leaving the institute, Track the progress of your application and
+                Print out the application form once it has been approved by all the concering deparments to finally be approved
+                by Dean(Academics)
+              </p>
+              <button class="btn-wide-green" type="button" name="button">Apply for No Dues</button>
+            </div>
+          </section>
+
+          <!-- No Dues Activity -->
+          <section class="no-due-activity">
+            <h4>No Dues Activity</h4>
+            <div class="table">
+              <div class="table-header">
+                <h6 class="col-sm-10">Department</h6>
+                <h6 class="col-sm-2">Status</h6>
+              </div>
+              <div class="drop-tab">
+                <div class="table-row">
+                  <span class="glyphicon glyphicon-collapse-down"></span>
+                  <div class="col-sm-10">Library</div>
+                  <div class="col-sm-2">'.$lib.'</div>
+                </div>
+                <div class="activity-tab">
+                  <div class="list-header">
+                    <h6 class="col-sm-10">Activity</h6>
+                    <h6 class="col-sm-2">Date</h6>
+                   </div>
+                   <ul class="activity-list">
+                    <li>
+                     <div class="col-sm-10">'.$row["Activity"].'</div>
+                     <div class="col-sm-2">'.$row["Date"].'</div>
+                    </li>
+                   </ul>
+                  </div>
+                </div>
+
+              <div class="drop-tab">
+                <div class="table-row">
+                  <span class="glyphicon glyphicon-collapse-down"></span>
+                  <div class="col-sm-10">Dean(Student Welfare)/Chief Proctor</div>
+                  <div class="col-sm-2">'.$dean.'</div>
+                </div>
+                <div class="activity-tab">
+                  <div class="list-header">
+                    <h6 class="col-sm-10">Activity</h6>
+                    <h6 class="col-sm-2">Date</h6>
+                  </div>
+                  <ul class="activity-list">
+                    <li>
+                     <div class="col-sm-10">'.$row["Activity"].'</div>
+                     <div class="col-sm-2">'.$row["Date"].'</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="drop-tab">
+                <div class="table-row">
+                  <span class="glyphicon glyphicon-collapse-down"></span>
+                  <div class="col-sm-10">Deputy Registrar (Accounts)</div>
+                  <div class="col-sm-2">'.$registrar.'</div>
+                </div>
+                <div class="activity-tab">
+                  <div class="list-header">
+                    <h6 class="col-sm-10">Activity</h6>
+                    <h6 class="col-sm-2">Date</h6>
+                  </div>
+                  <ul class="activity-list">
+                    <li>
+                     <div class="col-sm-10">'.$row["Activity"].'</div>
+                     <div class="col-sm-2">'.$row["Date"].'</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="drop-tab">
+                <div class="table-row">
+                  <span class="glyphicon glyphicon-collapse-down"></span>
+                  <div class="col-sm-10">President Student Activity Center (SAC)/Gymkhana</div>
+                  <div class="col-sm-2">'.$sac.'</div>
+                </div>
+                <div class="activity-tab">
+                  <div class="list-header">
+                    <h6 class="col-sm-10">Activity</h6>
+                    <h6 class="col-sm-2">Date</h6>
+                  </div>
+                  <ul class="activity-list">
+                    <li>
+                     <div class="col-sm-10">'.$row["Activity"].'</div>
+                     <div class="col-sm-2">'.$row["Date"].'</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="drop-tab">
+                <div class="table-row">
+                  <span class="glyphicon glyphicon-collapse-down"></span>
+                  <div class="col-sm-10">Alumni Association</div>
+                  <div class="col-sm-2">'.$alumni.'</div>
+                </div>
+                <div class="activity-tab">
+                  <div class="list-header">
+                    <h6 class="col-sm-10">Activity</h6>
+                    <h6 class="col-sm-2">Date</h6>
+                  </div>
+                  <ul class="activity-list">
+                    <li>
+                     <div class="col-sm-10">'.$row["Activity"].'</div>
+                     <div class="col-sm-2">'.$row["Date"].'</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="drop-tab">
+                <div class="table-row">
+                  <span class="glyphicon glyphicon-collapse-down"></span>
+                  <div class="col-sm-10">Warden Hostel and Chief Warden</div>
+                  <div class="col-sm-2">'.$warden.'</div>
+                </div>
+                <div class="activity-tab">
+                  <div class="list-header">
+                    <h6 class="col-sm-10">Activity</h6>
+                    <h6 class="col-sm-2">Date</h6>
+                  </div>
+                  <ul class="activity-list">
+                    <li>
+                     <div class="col-sm-10">'.$row["Activity"].'</div>
+                     <div class="col-sm-2">'.$row["Date"].'</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="drop-tab">
+                <div class="table-row">
+                  <span class="glyphicon glyphicon-collapse-down"></span>
+                  <div class="col-sm-10">Head of Department</div>
+                  <div class="col-sm-2">'.$hod.'</div>
+                </div>
+                <div class="activity-tab">
+                  <div class="list-header">
+                    <h6 class="col-sm-10">Activity</h6>
+                    <h6 class="col-sm-2">Date</h6>
+                  </div>
+                  <ul class="activity-list">
+                    <li>
+                     <div class="col-sm-10">'.$row["Activity"].'</div>
+                     <div class="col-sm-2">'.$row["Date"].'</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- End of No Dues Activity -->
+
+          <!-- Print No Dues Form -->
+          <section>
+            <div class="tile about-tile-white">
+              <h4>No Dues Application</h4>
+              <p>This Application must be printed and submitted to the Dean(Academic) to complete your No Dues proess</p>
+              <button class="btn-wide-green" type="button" name="button">Print No Dues Application</button>
+            </div>
+          </section>
+          <!-- End of Print No Dues Form -->
+          <!-- Footer -->
+          <footer>
+            <p class="copyright-content">Copyright © <a href="http://www.mnnit.ac.in" style="color:white;">MNNIT</a> - All Rights Reserved Developed & Maintained By : Web Team</p>
+          </footer>
+          <!-- End of Footer -->
+        </div>
+        <!--======================================= End of No Dues =======================================-->
+
       </div>
       <!-- End of Body Container -->
     </div>
@@ -323,9 +556,9 @@
 		<div class="mobile-sidebar">
 			<div class="close-icon"></div>
 			<div class="profile-settings-container">
-				<a href="#"><div class="profile-settings"></div></a>
+				<a href="studentprofile.html?tab=student-profile"><div class="profile-settings"></div></a>
 				<div class="sub-settings-container">
-          <a href="#">
+          <a onclick="popup(2);" href="#">
 						<div class="profile-submenu-icon" id="change-password"></div>
 						<p>Change Password</p>
 					</a>
