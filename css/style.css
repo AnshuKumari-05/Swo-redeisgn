@@ -1347,10 +1347,27 @@ display: flex;
 .table-row .glyphicon{
   opacity: .5;
   font-size: 20px;
+  transition: all .2s linear;
+}
+.table-row .glyphicon.rotate{
+  transform: rotate(180deg);
 }
 .drop-tab{
   margin: 15px 0px;
   cursor: pointer;
+}
+#noduesform label{
+  padding : 10px 0px;
+}
+#noduesform input[type=radio]
+{
+  float : right;
+}
+#noduesform #description{
+  display: none;
+}
+#noduesform #description.active{
+  display: block;
 }
 @media screen and (max-width : 440px)
 {

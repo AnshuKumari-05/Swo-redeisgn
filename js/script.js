@@ -77,5 +77,16 @@ $(document).ready(function(){
 $(document).ready(function(){
   $(".drop-tab").on( "click", function(){
     $(this).find(".activity-tab").toggleClass("active");
+    $(this).find(".glyphicon").toggleClass("rotate");
+  });
+});
+
+// Interaction to view reason textbox when applying for a no dues.
+$(document).ready(function(){
+  $('#noduesform input:radio').on("click",function(){
+    if($(this).attr('id') == 'coursenotcompleted')
+      $('#noduesform #description').addClass('active');
+    else
+      $('#noduesform #description').removeClass('active');
   });
 });
