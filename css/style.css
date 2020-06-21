@@ -518,6 +518,7 @@ box-shadow: 3px 10px 15px -15px rgba(0,0,0,0.19);
 }
 .member-card p{
   color : #8b8b8b;
+  font-size : 13px;
 }
 @media screen and (max-width: 1065px) {
   .office-members .member-grid{
@@ -744,18 +745,18 @@ transition: .25s ease-in-out;
 -moz-box-shadow: 3px 10px 15px -15px rgba(0,0,0,0.19);
 box-shadow: 3px 10px 15px -15px rgba(0,0,0,0.19);
 }
-
-/*------------------------------------------------------------------------------
-                  Scholarship and Fellowship (Introduction)
--------------------------------------------------------------------------------*/
-.row.table-row{
+.row{
   margin-left: 0px;
+  margin-right: 0px;
 }
 .table-mobile-label{
   font-weight: 900;
   display: none;
 }
 
+/*------------------------------------------------------------------------------
+                  Scholarship and Fellowship (Introduction)
+-------------------------------------------------------------------------------*/
 .scholar-boards > .boards
 {
   width : 100%;
@@ -1376,6 +1377,81 @@ display: flex;
     padding : 10px 0px;
   }
 }
+/*------------------------------------------------------------------------------
+                Student Profile(Fresh Scholarship application)
+-------------------------------------------------------------------------------*/
+.scholarship-application
+{
+  background: white;
+  position: relative;
+  border-radius: 10px;
+  padding: 30px;
+}
+.scholarship-application input[type="file"] {
+    display: block;
+    background: #323a52;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.scholarship-application label
+{
+  color : #333;
+  margin : 20px 0px 5px 0px;
+}
+.scholarship-application p{
+  color : #818181;
+}
+.scholarship-application button{
+  width : 200px;
+  margin : 20px 0px;
+}
+.scholarship-application label:last-of-type
+{
+  display: block;
+}
+#fresh-scholarship #scholarship-agency-select,
+#fresh-scholarship #scholarship-agency-textbox,
+#fresh-scholarship #scholarship-name-select,
+#fresh-scholarship #scholarship-name-textbox
+{
+  display: none;
+}
+#fresh-scholarship #scholarship-agency-select.active,
+#fresh-scholarship #scholarship-agency-textbox.active,
+#fresh-scholarship #scholarship-name-select.active,
+#fresh-scholarship #scholarship-name-textbox.active
+{
+  display: block;
+}
+#fresh-scholarship-form
+{
+  height : 80%;
+  overflow-y: scroll;
+}
+#fresh-scholarship-form .col
+{
+  padding : 0px;
+}
+#fresh-scholarship-form p{
+  margin-bottom: 15px;
+}
+#fresh-scholarship-form iframe
+{
+  width : 100%;
+  margin-bottom: 20px;
+}
+#fresh-scholarship-form label
+{
+  margin : 10px 0px;
+}
+#fresh-scholarship-form input[type=submit]
+{
+  margin: 50px auto;
+  display: block;
+}
+
 /*------------------------------------------------------------------------------
                         Student Profile Media Queries
 -------------------------------------------------------------------------------*/

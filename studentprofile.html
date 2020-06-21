@@ -236,7 +236,7 @@
               </div>
               <div class="row">
                 <div class="col-sm-12 col-md-6">
-                  <p><b>Account No. : </b>98765432103456/p>
+                  <p><b>Account No. : </b>98765432103456</p>
                 </div>
                 <div class="col-sm-12 col-md-6">
                   <p><b>IFSC of Branch : </b>TY8765</p>
@@ -264,6 +264,112 @@
         <div id="fresh-scholarship">
           <section>
             <h2>Fresh Scholarship</h2>
+            <div class="tile about-tile">
+              <h4>Scholarship Application Process</h4>
+              <p>
+                You can apply for a new scholarship here by filling out the online form and uploading the required
+                documents for verification.<b style="color : yellow;">This is not the scholarship portal of the funding agency</b>. As per the scholarship guidelines, upon receiving
+                Fellowship/Scholarship/Stipend from more than one agencies, You have to retain only one Fellowship/Scholarship/Stipend
+                and return the rest. Candidates are expected to follow the guidelines as per Ordinance for UG/Masters/Doctoral
+                Programme and the guidelincs of fellowship providing agency, failing to do so may lead to punitive action against
+                the candidate.
+                <br><br>
+                Please take print out of the application form and enclose it of the
+                Scholarship and other documents such as bonafide certificate and fee reciept
+                and submit the same in the office of the Dean (SW) So that the same may be
+                verified on the scholarship portal.
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <h4>Fresh Scholarship Form</h4>
+            <form class="scholarship-application" action="student_backend.php" method="post" enctype="multipart/form-data" target="_blank">
+              <label for="session">Select Session</label>
+              <select id="scholarship-session" name="session">
+                <option value="2017-2018">2017-2018</option>
+                <option value="2019-2020">2019-2020</option>
+                <option value="2021-2022">2021-2022</option>
+                <option value="2023-2024">2023-2024</option>
+                <option value="2025-2026">2025-2026</option>
+              </select>
+
+              <label for="scheme">Select Scheme</label>
+              <select id="scholarship-scheme" name="scheme_name">
+                <option value="1">Central Schemes</option>
+                <option value="2">UGC Schemes</option>
+                <option value="3">AICTE Schemes</option>
+                <option value="4">State Schemes [Under NSP]</option>
+                <option value="5">State Schemes [Other than NSP]</option>
+                <option value="6">Institute Merit Scheme</option>
+                <option value="7">Aid to Financially Weaker Students</option>
+                <option value="8">OP- GEMS Scholarship</option>
+                <option value="9">Other</option>
+              </select>
+
+              <!-- Scholarship Agency Select / textbox -->
+              <div id="scholarship-agency-select">
+                <label for="funding_agency">Select Funding Agency</label>
+                <select name='funding_agency'>
+
+                </select>
+              </div>
+              <div id="scholarship-agency-textbox">
+                <label for="funding_agency">Select Funding Agency</label>
+                <input type="text" name='funding_agency' placeholder="Funding Agency" value="" required>
+              </div>
+              <!-- Scholarship Agency Select / textbox -->
+
+
+              <!-- Scholarship Name Select / textbox -->
+              <div id="scholarship-name-select">
+                <label for="Scholarship_name">Scholarship Name</label>
+                <select  name='Scholarship_name'>
+
+                </select>
+              </div>
+              <div id="scholarship-name-textbox">
+                <label for="Scholarship_name">Scholarship Name</label>
+                <input type="text" name='Scholarship_name' placeholder="Scholarship Name" value="" required>
+              </div>
+              <!-- Scholarship Agency Select / textbox -->
+
+
+              <label for="bonafide">Upload Bonafide certificate of current semester</label>
+              <input type="file" name="bonafide" value="" required>
+
+              <label for="feereciept">Upload fee reciept issued by office of the Dean (Academics)</label>
+              <input type="file" name="feereciept" value="" required>
+
+              <label for="transcript">Upload transcript issued by office of the Dean (Academics)</label>
+              <input type="file" name="transcript" value="" required>
+
+              <label for="income1">Upload Income Certificate</label>
+              <input type="file" name="income1" value="" required>
+
+              <label>Declaration : </label>
+              <p>
+                  I undertake that if I will receive Fellowship/Scholarship/Stipend
+                  from more than one agencies, I will retain only one Fellowship/Scholarship/Stipend
+                  and return the rest. I understand that the sole responsibility of
+                  returning the Fellowship/Scholarship/Stipend lies on me. I,
+                  further undertake that I will follow the guidelines as per Ordinance
+                  for UG/Masters/Doctoral Programme and the guidelincs of fellowship
+                  providing agency, failing which punitive action may be taken against me.
+              </p>
+              <input type="checkbox" name="accept-agreement" required>
+              <label for="accept-agreement">Yes, I accept</label>
+
+              <label>Note : </label>
+              <p>
+                Please take print out of this page,enclose application form of the
+                Scholarship and other documents such as bonafide certificate and fee
+                reciept and submit the same in the office of the Dean (SW) So that the
+                same may be verified on the scholarship portal.
+              </p>
+              <input border-color='white'  class='form-control' type='text' name='condition' value='fill' style='display:none;'>
+              <button class="btn-wide-green" type="button" name="button" onclick="previewFreshScholarship();">Preview Form</button>
+            </form>
           </section>
           <!-- Footer -->
           <footer>
@@ -277,7 +383,51 @@
         <div id="applied-scholarship">
           <section>
             <h2>Applied Scholarship</h2>
+            <div class="tile about-tile">
+              <h4>Scholarship Application</h4>
+              <p>
+                All your applied scholarship can be tracked here.As per the scholarship guidelines, upon receiving
+                Fellowship/Scholarship/Stipend from more than one agencies, You have to retain only one Fellowship/Scholarship/Stipend
+                and return the rest. Candidates are expected to follow the guidelines as per Ordinance for UG/Masters/Doctoral
+                Programme and the guidelincs of fellowship providing agency, failing to do so may lead to punitive action against
+                the candidate.
+                <br><br>
+                Please take print out of the application form and enclose it of the
+                Scholarship and other documents such as bonafide certificate and fee reciept
+                and submit the same in the office of the Dean (SW) So that the same may be
+                verified on the scholarship portal.
+              </p>
+            </div>
           </section>
+
+          <!-- Scholarship Records -->
+          <section>
+            <h4>Scholarship Record</h4>
+            <div class="table">
+              <div class="row table-header hide-header-sm">
+                <h6 class="col-sm-12 col-md-2">Scheme Name</h6>
+                <h6 class="col-sm-12 col-md-1">Funding Agency</h6>
+                <h6 class="col-sm-12 col-md-1">Scholarship Name</h6>
+                <h6 class="col-sm-12 col-md-1">Session</h6>
+                <h6 class="col-sm-12 col-md-1">Date</h6>
+                <h6 class="col-sm-12 col-md-1">Grant Status</h6>
+                <h6 class="col-sm-12 col-md-1">Amount</h6>
+                <h6 class="col-sm-12 col-md-2">Print Form</h6>
+              </div>
+              <div class="row table-row">
+                <div class="col-sm-12 col-md-2"><span class="table-mobile-label">Scheme Name : </span>State Schemes</div>
+                <div class="col-sm-12 col-md-1"><span class="table-mobile-label">Funding Agency : </span>Other</div>
+                <div class="col-sm-12 col-md-1"><span class="table-mobile-label">Scholarship Name: </span>UP Scholarship</div>
+                <div class="col-sm-12 col-md-1"><span class="table-mobile-label">Session : </span>2019-2020</div>
+                <div class="col-sm-12 col-md-1"><span class="table-mobile-label">Date : </span>2019/09/24</div>
+                <div class="col-sm-12 col-md-1"><span class="table-mobile-label">Grant Status : </span>No</div>
+                <div class="col-sm-12 col-md-1"><span class="table-mobile-label">Amount : </span>No</div>
+                <div class="col-sm-12 col-md-2"><button class="btn-wide-green">Print Form</button></div>
+              </div>
+            </div>
+          </section>
+          <!-- End of Scholarship Records -->
+
           <!-- Footer -->
           <footer>
             <p class="copyright-content">Copyright © <a href="http://www.mnnit.ac.in" style="color:white;">MNNIT</a> - All Rights Reserved Developed & Maintained By : Web Team</p>
@@ -629,6 +779,46 @@
         <input type="radio" name="nodue-reason" id="coursenotcompleted">
         <input type="text" id="description" placeholder="Reason of leaving" >
         <input type="submit" value="Apply for No Dues"/>
+      </form>
+    </div>
+
+    <!-- Popup to Preview New Scholarship Form Data Popup(4) -->
+    <div class="overlay">
+      <form id="fresh-scholarship-form" action="applyFreshScholarship();">
+        <div class="popup-header">
+          <h4>Form Review</h4>
+          <div class="close-icon" onclick="popup(4);"></div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label>Session : </label>
+            <p id="scholarship-session-preview"></p>
+          </div>
+          <div class="col">
+            <label>Scheme : </label>
+            <p id="scholarship-scheme-preview"></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label>Funding Agency : </label>
+            <p id="scholarship-agency-preview"></p>
+          </div>
+          <div class="col">
+            <label>Scholarship Name</label>
+            <p id="scholarship-name-preview"></p>
+          </div>
+        </div>
+        <label>Bonafide Certificate</label>
+        <iframe id="bonafide-preview" frameborder="0" scrolling="auto" height="300"></iframe>
+        <label>Fee Reciept</label>
+        <iframe id="feereciept-preview" frameborder="0" scrolling="auto"  height="300"></iframe>
+        <label>Transcript</label>
+        <iframe id="transcript-preview" frameborder="0" scrolling="auto" height="300"></iframe>
+        <label>Income Certificate</label>
+        <iframe id="income1-preview" frameborder="0" scrolling="auto" height="300"></iframe>
+        <input type="submit" class="btn-wide-green" value="Apply for Scholarship"/>
+        <p class="form-note">Click "Apply for Scholarship" to confirm your application or close this popup to make changes to your application.</p>
       </form>
     </div>
     <!-- End of Overlay and Popups -->
