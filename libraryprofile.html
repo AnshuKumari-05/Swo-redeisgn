@@ -1,0 +1,419 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Welfare Office, MNNIT</title>
+    <link rel="icon" href="media/logo-short.png">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <!-- Desktop Side bar -->
+    <div class="sidebar">
+      <!-- hamburger -->
+      <div id="nav-icon3">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <!-- End of hamburger -->
+
+      <!-- Desktop Sidemenu list -->
+      <ul class="side-menu dashboard-menu">
+        <!-- Profile icon -->
+        <li class="library-profile">
+        <a href="libraryprofile.html?tab=library-profile">
+          <div class="menu-icon active" id="icon-7"></div>  <!-- Active Icon -->
+          <p class="menu-option">Profile</p>
+        </a>
+      </li>
+      <!-- End of Profile link Icon -->
+
+      <!-- No Dues -->
+        <li class="nodue-request">
+        <a href="libraryprofile.html?tab=nodue-request">
+          <div class="menu-icon" id="icon-8"></div>
+          <p class="menu-option">No Due Requests</p>
+        </a>
+      </li>
+      <!-- End of No Dues link Icon -->
+      </ul>
+      <!-- End of Desktop Sidemenu List -->
+    </div>
+    <!-- End of Desktop Side bar -->
+
+    <!-- Right Side Body -->
+    <div class="body">
+      <!-- Logo Header -->
+      <div class="header">
+          <a href="index.html"><div class="logo"></div></a>
+          <!-- Profile with submenu -->
+          <div class="profile">
+            <ul class="profile-submenu">
+							<li>
+                <a href="libraryprofile.html?tab=library-profile">
+                  <p>Profile</p>
+                  <div id="profile-menu-profile" class="profile-submenu-icon"></div>
+                </a>
+              </li>
+              <li onclick="popup(0)" style="display:flex; justify-content : space-between; cursor : pointer;">
+                  <p>Change Password<p>
+                  <div id="profile-menu-password" class="profile-submenu-icon"></div>
+              </li>
+              <!-- Display logout option only when logged in -->
+              <li>
+                <a href="logout.php">
+                  <p>Sign Out<p>
+                  <div id="profile-menu-signout" class="profile-submenu-icon"></div>
+                </a>
+              </li>
+              <!-- Display logout option only when loggd in -->
+            </ul>
+          </div>
+
+
+					<div class="moburger" id="nav-icon3">
+		        <span></span>
+		        <span></span>
+		        <span></span>
+		        <span></span>
+		      </div>
+          <!-- End of profile with submenu -->
+      </div>
+      <!-- End of Logo Header -->
+
+      <!-- Body Container -->
+      <div class="carousel-grid">
+        <!--========================== Start of Library Profile ============================ -->
+        <div id="library-profile">
+          <!-- Department Information -->
+          <section>
+            <h2>Library</h2>
+            <div class="tile about-tile">
+              <h4>About the Library Department</h4>
+              <p>
+                Central Library occupies a place of pride in MNNIT, Allahabad and is
+                an essential component of the institute’s outstanding research
+                and education mission. It is a most lively place on the campus
+                providing a safe, comfortable and friendly environment that enables
+                learning and advancement of knowledge, and promotes discovery and
+                scholarship. The mission of the Central Library is to facilitate
+                creation of new knowledge through acquisition, organization and
+                dissemination of knowledge resources and providing for value added
+                services.
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <div class="table">
+              <div class="table-header hide-header-sm">
+                <h6 class="col-3">Department</h6>
+                <h6 class="col-3">Designation</h6>
+                <h6 class="col-3">Mobile No.</h6>
+                <h6 class="col-3">Email</h6>
+              </div>
+              <div class="row table-row">
+                <div class="col-sm-12 col-md-3"><span class="table-mobile-label">Department : </span>Ashish Mknight Kujur</div>
+                <div class="col-sm-12 col-md-3"><span class="table-mobile-label">Designation : </span>2019CA67</div>
+                <div class="col-sm-12 col-md-3"><span class="table-mobile-label">Mobile No. : </span>Biotechnology</div>
+                <div class="col-sm-12 col-md-3"><span class="table-mobile-label">Email : </span>Mechanical</div>
+              </div>
+            </div>
+          </section>
+          <!-- End of Department Information -->
+
+          <!-- Footer -->
+          <footer>
+            <p class="copyright-content">Copyright © <a href="http://www.mnnit.ac.in" style="color:white;">MNNIT</a> - All Rights Reserved Developed & Maintained By : Web Team</p>
+          </footer>
+          <!-- End of Footer -->
+        </div>
+        <!--============================== End of Library Profile ======================================-->
+
+        <!--============================ Start of No Due  ====================================-->
+        <div id="nodue-request">
+          <section>
+            <h2>No Dues</h2>
+            <div class="tile about-tile">
+              <h4>About the No Due Process</h4>
+              <p>
+                During your curriculam the institute encourages students to participate
+                and explore various academic and extracarricular facilities to
+                enhance your learning experience throughout your time in the MNNIT
+                campus.
+                <br><br>
+                This section is crucial to help students  clear out any pending dues
+                they may have towards the library before leaving the institution.
+                You can view the list of students who apply for fresh no dues in the "New Requests"
+                section. The students who have cleared their dues towards the library and have been
+                approved can be viewed in the "Approved Requests" section. The students who have not
+                yet cleared their dues and have been put on hold for approval can
+                be viewed in the "Rejected Requests" section. Kindly provide an accurate reason to
+                reject any no dues request, as it helps keep an accurate record of student
+                activity.
+              </p>
+            </div>
+          </section>
+
+          <section class="no-due-section-department">
+            <form class="search-nodue" action="index.html" method="post">
+              <select class="" name="search-nodue-session">
+                <option value="all">All</option>
+              </select>
+              <input type="submit" name="" value="Search">
+            </form>
+            <h3>Session : All</h3>
+            <div class="no-due-controls">
+              <div class="nodue-buttons">
+                <button id="nodue-btn-new" class="active" type="button" name="button">New Requests</button>
+                <button id="nodue-btn-approve" type="button" name="button">Approved Requests</button>
+                <button id="nodue-btn-reject" type="button" name="button">Rejected Requests</button>
+              </div>
+              <div class="nodue-select-all">
+                <select id="select-all">
+                  <option value="">Select Action</option>
+                  <option value="approve" selected="selected">Approve All</option>
+                  <option value="reject">Reject All</option>
+                </select>
+              </div>
+            </div>
+            <div class="nodue-tabs">
+              <div class="nodue-tab active" id="nodue-tab-new">
+                <div class="table">
+                  <div class="table-header hide-header-sm">
+                    <h6 class="col-2">Student Name</h6>
+                    <h6 class="col-1">Registration</h6>
+                    <h6 class="col-1">Branch</h6>
+                    <h6 class="col-2">Department</h6>
+                    <h6 class="col-3">Reason</h6>
+                    <h6 class="col-2">Action</h6>
+                  </div>
+                  <div class="row table-row">
+                    <div class="col-sm-12 col-md-2"><span class="table-mobile-label">Name : </span>Ashish Mknight Kujur</div>
+                    <div class="col-sm-12 col-md-1"><span class="table-mobile-label">Registration : </span>2019CA67</div>
+                    <div class="col-sm-12 col-md-1"><span class="table-mobile-label">Branch : </span>Biotechnology</div>
+                    <div class="col-sm-12 col-md-2"><span class="table-mobile-label">Department : </span>Mechanical</div>
+                    <div class="col-sm-12 col-md-3"><span class="table-mobile-label">Reason : </span>I have completed my course.</div>
+                    <div class="col-sm-12 col-md-2"><span class="table-mobile-label">Action : </span>
+                      <select class="select-choice">
+                        <option value="approve" selected="selected">Approve</option>
+                        <option value="reject">Reject</option>
+                      </select>
+                      <input class="reject-reason-tb" type="text" name="" value="" placeholder="Reason for rejection">
+                    </div>
+                  </div>
+                  <div class="row table-row">
+                    <div class="col-sm-12 col-md-2"><span class="table-mobile-label">Name : </span>Ashish Mknight Kujur</div>
+                    <div class="col-sm-12 col-md-1"><span class="table-mobile-label">Registration : </span>2019CA67</div>
+                    <div class="col-sm-12 col-md-1"><span class="table-mobile-label">Branch : </span>Biotechnology</div>
+                    <div class="col-sm-12 col-md-2"><span class="table-mobile-label">Department : </span>Mechanical</div>
+                    <div class="col-sm-12 col-md-3"><span class="table-mobile-label">Reason : </span>I have completed my course.</div>
+                    <div class="col-sm-12 col-md-2"><span class="table-mobile-label">Action : </span>
+                      <select class="select-choice">
+                        <option value="approve" selected="selected">Approve</option>
+                        <option value="reject">Reject</option>
+                      </select>
+                      <input class="reject-reason-tb" type="text" name="" value="" placeholder="Reason for rejection">
+                    </div>
+                  </div>
+                </div>
+                <button class="btn-wide-green" type="button" name="button">Process Selected</button>
+              </div>
+              <div class="nodue-tab" id="nodue-tab-approved">
+                <div class="table">
+                  <div class="table-header hide-header-sm">
+                    <h6 class="col-2">Student Name</h6>
+                    <h6 class="col-2">Registration</h6>
+                    <h6 class="col-2">Branch</h6>
+                    <h6 class="col-2">Department</h6>
+                    <h6 class="col-2">Reason</h6>
+                  </div>
+                  <div class="row table-row">
+                    <div class="col-sm-12 col-md-2"><span class="table-mobile-label">Name : </span>Ashish Mknight Kujur</div>
+                    <div class="col-sm-12 col-md-2"><span class="table-mobile-label">Registration : </span>2019CA67</div>
+                    <div class="col-sm-12 col-md-2"><span class="table-mobile-label">Branch : </span>Biotechnology</div>
+                    <div class="col-sm-12 col-md-2"><span class="table-mobile-label">Department : </span>Mechanical</div>
+                    <div class="col-sm-12 col-md-2"><span class="table-mobile-label">Reason : </span>I have completed my course.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="nodue-tab" id="nodue-tab-rejected">
+                <div class="table">
+                  <div class="table-header hide-header-sm">
+                    <h6 class="col-2">Student Name</h6>
+                    <h6 class="col-1">Registration</h6>
+                    <h6 class="col-1">Branch</h6>
+                    <h6 class="col-2">Department</h6>
+                    <h6 class="col-2">Reason</h6>
+                    <h6 class="col-2">Remark</h6>
+                    <h6 class="col-2">Action</h6>
+                  </div>
+                  <div class="row table-row">
+                    <div class="col-sm-12 col-md-2"><span class="table-mobile-label">Name : </span>Ashish Mknight Kujur</div>
+                    <div class="col-sm-12 col-md-1"><span class="table-mobile-label">Registration : </span>2019CA67</div>
+                    <div class="col-sm-12 col-md-1"><span class="table-mobile-label">Branch : </span>Biotechnology</div>
+                    <div class="col-sm-12 col-md-2"><span class="table-mobile-label">Department : </span>Mechanical</div>
+                    <div class="col-sm-12 col-md-2"><span class="table-mobile-label">Reason : </span>I have completed my course.</div>
+                    <div class="col-sm-12 col-md-2"><span class="table-mobile-label">Remark : </span>I have completed my course.</div>
+                    <div class="col-sm-12 col-md-2"><span class="table-mobile-label">Action : </span>
+                      <select class="select-choice">
+                        <option value="approve" selected="selected">Approve</option>
+                        <option value="reject">Reject</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <button class="btn-wide-green" type="button" name="button">Process Selected</button>
+              </div>
+            </div>
+          </section>
+          <!-- Footer -->
+          <footer>
+            <p class="copyright-content">Copyright © <a href="http://www.mnnit.ac.in" style="color:white;">MNNIT</a> - All Rights Reserved Developed & Maintained By : Web Team</p>
+          </footer>
+          <!-- End of Footer -->
+        </div>
+        <!--=============================== End of No Due ====================================================-->
+      </div>
+      <!-- End of Body Container -->
+    </div>
+    <!-- End of Right side body -->
+
+    <!-- Overlay and Popups -->
+
+    <!-- Popup to Change Password popup(0) -->
+    <div class="overlay">
+      <form>
+        <div class="popup-header">
+          <h4>Change Password</h4>
+          <div class="close-icon" onclick="popup(0);"></div>
+        </div>
+        <input type="password" name="password" value="" placeholder="Current Password">
+        <input type="password" name="new-password" value="" placeholder="New Password">
+        <input type="submit" value="Update Password"/>
+      </form>
+    </div>
+
+		<!-- Mobile Side Bar -->
+		<div class="mobile-sidebar">
+			<div class="close-icon"></div>
+			<div class="profile-settings-container">
+				<a href="libraryprofile.html?tab=library-profile"><div class="profile-settings"></div></a>
+				<div class="sub-settings-container">
+          <a onclick="popup(0);" href="#">
+						<div class="profile-submenu-icon" id="change-password"></div>
+						<p>Change Password</p>
+					</a>
+					<a href="#">
+						<div class="profile-submenu-icon" id="logout"></div>
+						<p>Sign Out</p>
+					</a>
+				</div>
+			</div>
+			<a href="index.html"><div class="card-header">Home</div></a>
+			<!-- Drop Down Accordion Code -->
+			<div id="accordion">
+        <div class="card">
+    			<div class="card-header" id="headingOne">
+        		<div class="collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Profile</div>
+    			</div>
+    			<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+      			<div class="card-body">
+							<ul>
+								<a href="libraryprofile.html?tab=library-profile"><li>Profile</li></a>
+	            	<a href="libraryprofile.html?tab=nodue-request"><li>No Dues</li></a>
+							</ul>
+      			</div>
+    			</div>
+  			</div>
+  			<div class="card">
+    			<div class="card-header" id="headingTwo">
+        		<div class="collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Students Welfare Office</div>
+    			</div>
+    			<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+      			<div class="card-body">
+							<ul>
+								<a href="scholarship.html?tab=scholarship-section"><li>Scholarship and Fellowship</li></a>
+	            	<a href="scholarship.html?tab=medals-section"><li>Medals and Awards</li></a>
+	            	<a href="scholarship.html?tab=mediclaim-section"><li>Insuarance and Mediclaim</li></a>
+	            	<a href="scholarship.html?tab=antiRagging-section"><li>Anti-Ragging Initiatve</li></a>
+	            	<a href="scholarship.html?tab=counseling-section"><li>Counseling and Assistance</li></a>
+							</ul>
+      			</div>
+    			</div>
+  			</div>
+  			<div class="card">
+    			<div class="card-header" id="headingThree">
+        		<div class="collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Chief Proctor Office</div>
+    			</div>
+    			<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+      			<div class="card-body">
+							<ul>
+								<a href="proctor.html?tab=proctor-section"><li>About Chief Proctor Office</li></a>
+								<a href="proctor.html?tab=discipline-section"><li>Discipline and Proctorial Board</li></a>
+								<a href="proctor.html?tab=character-section"><li>I-Card and Character Certificate</li></a>
+							</ul>
+      			</div>
+    			</div>
+  			</div>
+  			<div class="card">
+    			<div class="card-header" id="headingFour">
+        		<div class="collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Chief Warden Office</div>
+    			</div>
+    			<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+      			<div class="card-body">
+        			<ul>
+                <a href="warden.html?tab=warden-section"><li>About Chief Warden Office</li></a>
+								<a href="warden.html?tab=team-section"><li>Team of Wardens</li></a>
+                <a href="warden.html?tab=hostelStructure-section"><li>Hostel Structure</li></a>
+								<a href="warden.html?tab=hostelManagement-section"><li>Hostel Management</li></a>
+                <a href="warden.html?tab=mess-section"><li>Mess Management</li></a>
+							</ul>
+      			</div>
+    			</div>
+  			</div>
+        <div class="card">
+    			<div class="card-header" id="headingFive">
+        		<div class="collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Student Activity Office</div>
+    			</div>
+    			<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+      			<div class="card-body">
+        			<ul>
+                <a href="student.html?tab=undertaking-section"><li>Undertakings and Forms</li></a>
+								<a href="http://www.mnnit.ac.in/index.php/notice-board" target="_blank"><li>Student Notice</li></a>
+							</ul>
+      			</div>
+    			</div>
+  			</div>
+        <div class="card">
+    			<div class="card-header" id="headingSix">
+        		<div class="collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">Gallery</div>
+    			</div>
+    			<div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+      			<div class="card-body">
+        			<ul>
+                <a href="gallery.html?tab=institute-section"><li>Institute Gallery</li></a>
+								<a href="gallery.html?tab=bharat-section"><li>Ek Bharat Shreshtha Bharat Gallery</li></a>
+                <a href="gallery.html?tab=voter-section"><li>Voter Awareness Paiting Competition Gallery</li></a>
+							</ul>
+      			</div>
+    			</div>
+  			</div>
+			</div>
+			<!-- End of Drop Down Accordion Code -->
+		</div>
+		<!-- End of Mobile Side Bar -->
+  	</body>
+		<script>
+
+		</script>
+  	<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+  	<script type="text/javascript" src="js/script.js"></script>
+	</html>

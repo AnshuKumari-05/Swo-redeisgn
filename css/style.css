@@ -1451,7 +1451,60 @@ display: flex;
   margin: 50px auto;
   display: block;
 }
-
+/*------------------------------------------------------------------------------
+                        NoDue Department Profile
+-------------------------------------------------------------------------------*/
+.no-due-section-department{
+  background: white;
+  min-height: 200px;
+  padding : 20px;
+  border-radius: 10px;
+}
+.nodue-tabs{
+  position: relative;
+}
+.nodue-tab{
+  width: 100%;
+  display: none;
+}
+.nodue-tab.active{
+  display: block;
+}
+.no-due-controls{
+  display: flex;
+  justify-content: space-between;
+}
+.nodue-buttons{
+  display: flex;
+  align-items: center;
+  width : 420px;
+  justify-content: space-between;
+}
+.nodue-buttons > button{
+  padding : 10px;
+  background: #e9ecf0;
+  border : 0px;
+  border-radius: 5px;
+}
+.nodue-buttons > button.active{
+  background : #2e91cc;
+  color : white;
+}
+.search-nodue{
+  display: flex;
+}
+.nodue-tab .table-header{
+  padding: 0px 20px;
+}
+.nodue-select-all{
+  padding : 0px 20px;
+}
+.nodue-select-all select{
+  display: inline-block;
+}
+.reject-reason-tb{
+  display: none;
+}
 /*------------------------------------------------------------------------------
                         Student Profile Media Queries
 -------------------------------------------------------------------------------*/

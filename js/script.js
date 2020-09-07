@@ -589,3 +589,61 @@ function applyFreshScholarship()
   }, 3);
 }
 //----------- Script for Fresh Scholarship Application Ends here ---------------
+
+//---------- Script for UI Interaction NoDues (Departments) --------------------
+
+// select all interactions
+$('#select-all').on('click', function(){
+  let make_all = $('#select-all').val();
+  if(make_all == 'approve')
+  {
+      $('.select-choice').val('approve');
+      $('.reject-reason-tb').css({'display' : 'none'});
+  }
+  else if(make_all == 'reject') {
+    $('.select-choice').val('reject');
+    $('.reject-reason-tb').css({'display' : 'block'});
+  }
+});
+
+//select single interaction
+$(".select-choice").on('click', function(){
+  let action = $(this).val();
+  if(action == 'approve')
+  {
+      $(this).siblings(".reject-reason-tb").css({"display":"none"});
+  }
+  else if(action == 'reject') {
+    $(this).siblings(".reject-reason-tb").css({"display":"block"});
+  }
+});
+
+// new no dues request tab
+$('#nodue-btn-new').on('click', function(){
+  $('.nodue-buttons > button').removeClass("active");
+  $('#nodue-btn-new').addClass("active");
+
+  $('.nodue-tab').removeClass("active");
+  $('#nodue-tab-new').addClass("active");
+});
+
+// approved request tab
+$('#nodue-btn-approve').on('click', function(){
+  $('.nodue-buttons > button').removeClass("active");
+  $('#nodue-btn-approve').addClass("active");
+
+  $('.nodue-tab').removeClass("active");
+  $('#nodue-tab-approved').addClass("active");
+});
+
+// rejected request tab
+$('#nodue-btn-reject').on('click', function(){
+  $('.nodue-buttons > button').removeClass("active");
+  $('#nodue-btn-reject').addClass("active");
+
+  $('.nodue-tab').removeClass("active");
+  $('#nodue-tab-rejected').addClass("active");
+});
+
+
+//------------------------------------------------------------------------------
