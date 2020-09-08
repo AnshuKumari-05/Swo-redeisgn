@@ -26,22 +26,36 @@
       <!-- Desktop Sidemenu list -->
       <ul class="side-menu dashboard-menu">
         <!-- Profile icon -->
-        <li class="sac-profile">
-        <a href="sacprofile.html?tab=sac-profile">
+        <li class="department-profile">
+        <a href="departmentprofile.html?tab=department-profile">
           <div class="menu-icon active" id="icon-7"></div>  <!-- Active Icon -->
           <p class="menu-option">Profile</p>
         </a>
       </li>
       <!-- End of Profile link Icon -->
 
+      <!-- Proctor link Icon -->
+        <li class="proctor-tab">
+          <ul class="submenu proctor-tab-submenu">
+            <li><a href="departmentprofile.html?tab=add-punishment">Add Student Punishments</a></li>
+            <li><a href="departmentprofile.html?tab=view-punishment">View Student Punishments</a></li>
+          </ul>
+        <a href="#">
+          <div class="menu-icon active" id="icon-3"></div>
+          <p class="menu-option">Chief Proctor Office</p>
+        </a>
+      </li>
+      <!-- End of Proctor link Icon -->
+
       <!-- No Dues -->
         <li class="nodue-request">
-        <a href="sacprofile.html?tab=nodue-request">
-          <div class="menu-icon" id="icon-8"></div>
+        <a href="departmentprofile.html?tab=nodue-request">
+          <div class="menu-icon" id="icon-5"></div>
           <p class="menu-option">No Due Requests</p>
         </a>
       </li>
       <!-- End of No Dues link Icon -->
+
       </ul>
       <!-- End of Desktop Sidemenu List -->
     </div>
@@ -56,7 +70,7 @@
           <div class="profile">
             <ul class="profile-submenu">
 							<li>
-                <a href="sacprofile.html?tab=sac-profile">
+                <a href="departmentprofile.html?tab=department-profile">
                   <p>Profile</p>
                   <div id="profile-menu-profile" class="profile-submenu-icon"></div>
                 </a>
@@ -90,12 +104,12 @@
       <!-- Body Container -->
       <div class="carousel-grid">
         <!--========================== Start of Library Profile ============================ -->
-        <div id="sac-profile">
+        <div id="department-profile">
           <!-- Department Information -->
           <section>
-            <h2>Student Activity Center</h2>
+            <h2>Library</h2>
             <div class="tile about-tile">
-              <h4>About the Student Activity Center</h4>
+              <h4>About the Library Department</h4>
               <p>
                 Central Library occupies a place of pride in MNNIT, Allahabad and is
                 an essential component of the institute’s outstanding research
@@ -136,6 +150,148 @@
         </div>
         <!--============================== End of Library Profile ======================================-->
 
+        <!--========================== Start of Add Punishment ============================ -->
+        <div id="add-punishment">
+          <section>
+            <h2>Chief Proctor's Office</h2>
+            <div class="tile about-tile">
+              <h4>About Punishment Department</h4>
+              <p>
+                To run any organization in a disciplined way some rules
+                and regulations are formed and members of the organization are required
+                to follow those rules and regulations. Motilal Nehru National Institute
+                of Technology Allahabad, Prayagraj has also certain rules and regulations
+                and students are required to follow those rules for making a healthy environment
+                in the Institute campus and enabling them to become a responsible citizen of India.
+                <br><br>
+                Failing to abide by the institutions regulation will lead to disceplinary actions,
+                If a student have been subjected to such an action, The punishement records for the
+                student's misdeeds are added here.
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <h4>Enter Student Data</h4>
+            <form class="scholarship-application" action="" method="post">
+              <input type="text" name="" placeholder="Registration No.">
+              <input type="text" name="" placeholder="Name">
+              <input type="text" name="" value="" placeholder="Ref. No. of Proctorial Board">
+              <div class="">
+                <label for="session">Counseling</label>
+                <select id="" name="session">
+                  <option value="no">No</option>
+                  <option value="yes">Yes</option>
+                </select>
+                <input class="reject-reason-tb" type="text" placeholder="Enter Councelling Duration">
+              </div>
+              <div class="">
+                <label for="session">Yoga Classes</label>
+                <select id="" name="session">
+                  <option value="no">No</option>
+                  <option value="yes">Yes</option>
+                </select>
+                <input class="reject-reason-tb" type="text" placeholder="Enter Duration of Yoga Classes">
+              </div>
+              <div class="">
+                <label for="session">Hostel Expulsion</label>
+                <select id="" name="session">
+                  <option value="no">No</option>
+                  <option value="yes">Yes</option>
+                </select>
+                <input class="reject-reason-tb" type="text" placeholder="Enter Duration of Hostel Expulsion">
+              </div>
+              <div class="">
+                <label for="session">Institute Expulsion</label>
+                <select id="" name="session">
+                  <option value="no">No</option>
+                  <option value="yes">Yes</option>
+                </select>
+                <input class="reject-reason-tb" type="text" placeholder="Enter Duration of Institute Expulsion">
+              </div>
+              <div class="">
+                <label for="session">Debar Registration</label>
+                <select id="" name="session">
+                  <option value="no">No</option>
+                  <option value="yes">Yes</option>
+                </select>
+                <input class="reject-reason-tb" type="text" placeholder="Enter Details">
+              </div>
+              <div class="">
+                <label for="session">Monetary Fine</label>
+                <select id="" name="session">
+                  <option value="no">No</option>
+                  <option value="yes">Yes</option>
+                </select>
+                <input class="reject-reason-tb" type="text" placeholder="Enter Amount">
+              </div>
+              <div class="">
+                <label for="session">Inform Parents</label>
+                <select id="" name="session">
+                  <option value="no">No</option>
+                  <option value="yes">Yes</option>
+                </select>
+                <input class="reject-reason-tb" type="text" placeholder="Enter dispatch number & date of the letters">
+              </div>
+              <div class="">
+                <label for="session">Warning Letter to Student</label>
+                <select id="" name="session">
+                  <option value="no">No</option>
+                  <option value="yes">Yes</option>
+                </select>
+                <input class="reject-reason-tb" type="text" placeholder="Enter dispatch number & date of the warning letter">
+              </div>
+              <div class="select-choice">
+                <label for="session">Other Punishment</label>
+                <select id="" name="session">
+                  <option value="no">No</option>
+                  <option value="yes">Yes</option>
+                </select>
+                <input class="reject-reason-tb" type="text" placeholder="Enter Details about the punishment.">
+              </div>
+              <button class="btn-wide-green" type="submit">Add Student</button>
+            </form>
+          </section>
+          <!-- Footer -->
+          <footer>
+            <p class="copyright-content">Copyright © <a href="http://www.mnnit.ac.in" style="color:white;">MNNIT</a> - All Rights Reserved Developed & Maintained By : Web Team</p>
+          </footer>
+          <!-- End of Footer -->
+        </div>
+        <!--============================== End of add Punishment ======================================-->
+
+        <!--========================== Start of View Punishment ============================ -->
+        <div id="view-punishment">
+          <section>
+            <h2>Chief Proctor's Office</h2>
+            <div class="tile about-tile">
+              <h4>About Punishment Department</h4>
+              <p>
+                To run any organization in a disciplined way some rules
+                and regulations are formed and members of the organization are required
+                to follow those rules and regulations. Motilal Nehru National Institute
+                of Technology Allahabad, Prayagraj has also certain rules and regulations
+                and students are required to follow those rules for making a healthy environment
+                in the Institute campus and enabling them to become a responsible citizen of India.
+                <br><br>
+                Failing to abide by the institutions regulation will lead to disceplinary actions,
+                If a student have been subjected to such an action, The punishement records for the
+                student's misdeeds are tracked here.
+              </p>
+            </div>
+          </section>
+          <section>
+
+          </section>
+
+          <!-- Footer -->
+          <footer>
+            <p class="copyright-content">Copyright © <a href="http://www.mnnit.ac.in" style="color:white;">MNNIT</a> - All Rights Reserved Developed & Maintained By : Web Team</p>
+          </footer>
+          <!-- End of Footer -->
+        </div>
+        <!--============================== End of View Punishment ======================================-->
+
         <!--============================ Start of No Due  ====================================-->
         <div id="nodue-request">
           <section>
@@ -149,7 +305,7 @@
                 campus.
                 <br><br>
                 This section is crucial to help students  clear out any pending dues
-                they may have towards the library before leaving the institution.
+                they may have towards your department before leaving the institution.
                 You can view the list of students who apply for fresh no dues in the "New Requests"
                 section. The students who have cleared their dues towards the library and have been
                 approved can be viewed in the "Approved Requests" section. The students who have not
@@ -304,7 +460,7 @@
 		<div class="mobile-sidebar">
 			<div class="close-icon"></div>
 			<div class="profile-settings-container">
-				<a href="sacprofile.html?tab=sac-profile"><div class="profile-settings"></div></a>
+				<a href="departmentprofile.html?tab=department-profile"><div class="profile-settings"></div></a>
 				<div class="sub-settings-container">
           <a onclick="popup(0);" href="#">
 						<div class="profile-submenu-icon" id="change-password"></div>
@@ -326,8 +482,8 @@
     			<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
       			<div class="card-body">
 							<ul>
-								<a href="sacprofile.html?tab=sac-profile"><li>Profile</li></a>
-	            	<a href="sacprofile.html?tab=nodue-request"><li>No Dues</li></a>
+								<a href="departmentprofile.html?tab=department-profile"><li>Profile</li></a>
+	            	<a href="departmentprofile.html?tab=nodue-request"><li>No Dues</li></a>
 							</ul>
       			</div>
     			</div>

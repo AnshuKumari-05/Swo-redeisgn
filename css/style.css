@@ -1395,6 +1395,9 @@ display: flex;
     border-radius: 5px;
     cursor: pointer;
 }
+.scholarship-application input[type="submit"] {
+    background: #2ecc71;
+  }
 .scholarship-application label
 {
   color : #333;
