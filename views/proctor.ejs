@@ -1,0 +1,704 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Welfare Office, MNNIT</title>
+    <link rel="icon" href="media/logo-short.png">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <!-- Desktop Side bar -->
+    <div class="sidebar">
+      <!-- hamburger -->
+      <div id="nav-icon3">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <!-- End of hamburger -->
+
+      <!-- Desktop Sidemenu list -->
+      <ul class="side-menu">
+        <!-- Home link Icon -->
+        <li>
+        <a href="/">
+          <div class="menu-icon" id="icon-1"></div>  <!-- Active Icon -->
+          <p class="menu-option">Home</p>
+        </a>
+      </li>
+      <!-- End of Home link Icon -->
+
+      <!-- Scholarship link Icon -->
+        <li class="scholarship-tab">
+          <ul class="submenu scholarship-tab-submenu">
+            <li><a href="scholarship?tab=scholarship-section">Scholarship and Fellowship</a></li>
+            <li><a href="scholarship?tab=medals-section">Medals and Awards</a></li>
+            <li><a href="scholarship?tab=mediclaim-section">Insuarance and Mediclaim</a></li>
+            <li><a href="scholarship?tab=antiRagging-section">Anti-Ragging Initiatve</a></li>
+            <li><a href="scholarship?tab=counseling-section">Counseling and Assistance</a></li>
+          </ul>
+        <a href="#">
+          <div class="menu-icon" id="icon-2"></div>
+          <p class="menu-option">Students Welfare Office</p>
+        </a>
+      </li>
+      <!-- End of Scholarship link Icon -->
+
+      <!-- Proctor link Icon -->
+        <li class="proctor-tab">
+          <ul class="submenu proctor-tab-submenu">
+            <li><a href="proctor?tab=proctor-section">About Chief Proctor Office</a></li>
+            <li><a href="proctor?tab=discipline-section">Discipline and Proctorial Board</a></li>
+            <li><a href="proctor?tab=character-section">I-Card and Character Certificate</a></li>
+          </ul>
+        <a href="#">
+          <div class="menu-icon active" id="icon-3"></div>
+          <p class="menu-option">Chief Proctor Office</p>
+        </a>
+      </li>
+      <!-- End of Proctor link Icon -->
+
+      <!-- Warden link Icon -->
+        <li class="warden-tab">
+          <ul class="submenu warden-tab-submenu">
+            <li><a href="warden?tab=warden-section">About Chief Warden Office</a></li>
+            <li><a href="warden?tab=team-section">Team of Wardens</a></li>
+            <li><a href="warden?tab=hostelStructure-section">Hostel Structure</a></li>
+            <li><a href="warden?tab=hostelManagement-section">Hostel Management</a></li>
+            <li><a href="warden?tab=mess-section">Mess Management</a></li>
+          </ul>
+        <a href="#">
+          <div class="menu-icon" id="icon-4"></div>
+          <p class="menu-option">Chief Warden Office</p>
+        </a>
+      </li>
+      <!-- End of Warden link icon -->
+
+      <!-- Student link Icon -->
+        <li class="student-tab">
+          <ul class="submenu student-tab-submenu">
+            <li><a href="student?tab=undertaking-section">Undertakings and Forms</a></li>
+            <li><a href="http://www.mnnit.ac.in/index.php/notice-board" target="_blank">Student Notice</a></li>
+          </ul>
+        <a href="#">
+          <div class="menu-icon" id="icon-5"></div>
+          <p class="menu-option">Student Activity Office</p>
+        </a>
+      </li>
+      <!-- End of Student link icon -->
+
+      <!-- Gallery link Icon -->
+        <li class="gallery-tab">
+          <ul class="submenu gallery-tab-submenu">
+            <li><a href="gallery?tab=institute-section">Institute Gallery</a></li>
+            <li><a href="gallery?tab=bharat-section">Ek Bharat Shreshtha Bharat Gallery</a></li>
+            <li><a href="gallery?tab=voter-section">Voter Awareness Paiting Competition Gallery</a></li>
+          </ul>
+        <a href="#">
+          <div class="menu-icon" id="icon-6"></div>
+          <p class="menu-option">Gallery</p>
+        </a>
+      </li>
+      <!-- End of Gallery link icon -->
+      </ul>
+      <!-- End of Desktop Sidemenu List -->
+    </div>
+    <!-- End of Desktop Side bar -->
+
+    <!-- Right Side Body -->
+    <div class="body">
+      <!-- Logo Header -->
+      <div class="header">
+          <a href="/"><div class="logo"></div></a>
+          <!-- Profile with submenu -->
+          <div class="profile">
+            <ul class="profile-submenu">
+							<li>
+                <a href="studentprofile?tab=student-profile">
+                  <p>Profile</p>
+                  <div id="profile-menu-profile" class="profile-submenu-icon"></div>
+                </a>
+              </li>
+              <li>
+                <a onclick="popup(0);" href="#">
+                  <p>Student Login</p>
+                  <div id="profile-menu-student-login" class="profile-submenu-icon"></div>
+                </a>
+              </li>
+              <li>
+                <a onclick="popup(1);" href="#">
+                  <p>Department Login</p>
+                  <div id="profile-menu-department-login" class="profile-submenu-icon"></div>
+                </a>
+              </li>
+              <li>
+                <a href="logout.php">
+                  <p>Sign Out<p>
+                  <div id="profile-menu-signout" class="profile-submenu-icon"></div>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+
+					<div class="moburger" id="nav-icon3">
+		        <span></span>
+		        <span></span>
+		        <span></span>
+		        <span></span>
+		      </div>
+
+
+          <!-- End of profile with submenu -->
+      </div>
+      <!-- End of Logo Header -->
+
+      <!-- Body Container -->
+      <div class="carousel-grid">
+        <!-- Scholarship and Fellowship section -->
+        <div id="proctor-section">
+          <section>
+            <h2>Office of the Chief Proctor</h2>
+            <div class="tile about-tile">
+              <h4>About Scholarships and Fellowships</h4>
+              <p>
+                There are certain rules and regulation framed by the Institute,
+                which are to be followed to maintain the cordial atmosphere in the
+                campus (among the students, faculty members and non teaching staff).
+                The Proctorial Board headed by the Chief Proctor (disciplinary authority
+                of the Institute) helps students, faculty members and non-teaching
+                staffs from any difficulty and to see that the disciplinary rules
+                are followed properly. Proctorial Board consists of Chief Proctor,
+                Proctor (Boys) and Proctor (Girls) is conscious and concerned about
+                interests of students, faculty members and non-teaching staff.
+              </p>
+            </div>
+          </section>
+
+          <!-- The office involvement  -->
+          <section>
+            <h4>Planning and Coordinating Students Counseling, Discipline and Conduct </h4>
+            <ol class="ordered-list">
+              <li>
+                <div class="numbered-icon">01</div>
+                <p>Organizing students Counseling and Liasoning with Students Parents/Guardians</p>
+              </li>
+              <li>
+                <div class="numbered-icon">02</div>
+                <p>Dealing matters related to Students Discipline and Council</p>
+              </li>
+              <li>
+                <div class="numbered-icon">03</div>
+                <p>Issuing I-Cards and Character Certificate</p>
+              </li>
+            </ol>
+          </section>
+          <!-- End of office involvement -->
+
+          <!-- Contact Details -->
+          <section>
+            <h4>Contact Details</h4>
+            <div class="table">
+              <div class="table-header hide-header-sm">
+                <h6 class="col-2">Name</h6>
+                <h6 class="col-2">Designation</h6>
+                <h6 class="col-1">Quarter No.</h6>
+                <h6 class="col-2">PBX(O)</h6>
+                <h6 class="col-2">Mobile</h6>
+                <h6 class="col-3">Email ID</h6>
+              </div>
+              <div class="row table-row">
+                <div class="col-sm-12 col-md-2"><span class="table-mobile-label">Name : </span>Dr. K.N.Pandey</div>
+                <div class="col-sm-12 col-md-2"><span class="table-mobile-label">Designation : </span>Chief Proctor</div>
+                <div class="col-sm-12 col-md-1"><span class="table-mobile-label">Quarter No. : </span>A-17</div>
+                <div class="col-sm-12 col-md-2"><span class="table-mobile-label">PBX(O) : </span>+91-532-2271972</div>
+                <div class="col-sm-12 col-md-2"><span class="table-mobile-label">Mobile : </span>9919692937</div>
+                <div class="col-sm-12 col-md-3"><span class="table-mobile-label">Email : </span>knpandey@mnnit.ac.in</div>
+              </div>
+              <div class="row table-row">
+                <div class="col-sm-12 col-md-2"><span class="table-mobile-label">Name : </span>Dr. Basant Kumar</div>
+                <div class="col-sm-12 col-md-2"><span class="table-mobile-label">Designation : </span>Proctor (Boys)</div>
+                <div class="col-sm-12 col-md-1"><span class="table-mobile-label">Quarter No. : </span>C-15</div>
+                <div class="col-sm-12 col-md-2"><span class="table-mobile-label">PBX(O) : </span>+91-532-2271466</div>
+                <div class="col-sm-12 col-md-2"><span class="table-mobile-label">Mobile : </span>9452196139</div>
+                <div class="col-sm-12 col-md-3"><span class="table-mobile-label">Email : </span>singhbasant@mnnit.ac.in</div>
+              </div>
+              <div class="row table-row">
+                <div class="col-sm-12 col-md-2"><span class="table-mobile-label">Name : </span>Dr. Shalinee Shukla</div>
+                <div class="col-sm-12 col-md-2"><span class="table-mobile-label">Designation : </span>Proctor (Girls)</div>
+                <div class="col-sm-12 col-md-1"><span class="table-mobile-label">Quarter No. : </span>C-61</div>
+                <div class="col-sm-12 col-md-2"><span class="table-mobile-label">PBX(O) : </span>+91-532-2271324</div>
+                <div class="col-sm-12 col-md-2"><span class="table-mobile-label">Mobile : </span>9794937868</div>
+                <div class="col-sm-12 col-md-3"><span class="table-mobile-label">Email : </span>sshukla@mnnit.ac.in</div>
+              </div>
+              <div class="row table-row">
+                <div class="col-sm-12 col-md-2"><span class="table-mobile-label">Name : </span>Dr. Animesh Ojha</div>
+                <div class="col-sm-12 col-md-2"><span class="table-mobile-label">Designation : </span>FI Counseling (Boys)</div>
+                <div class="col-sm-12 col-md-1"><span class="table-mobile-label">Quarter No. : </span>C-67</div>
+                <div class="col-sm-12 col-md-2"><span class="table-mobile-label">PBX(O) : </span>+91-532-2271265</div>
+                <div class="col-sm-12 col-md-2"><span class="table-mobile-label">Mobile : </span>9532830699</div>
+                <div class="col-sm-12 col-md-3"><span class="table-mobile-label">Email : </span>animesh@mnnit.ac.in</div>
+              </div>
+              <div class="row table-row">
+                <div class="col-sm-12 col-md-2"><span class="table-mobile-label">Name : </span>Dr. Vibhuti Tripathi</div>
+                <div class="col-sm-12 col-md-2"><span class="table-mobile-label">Designation : </span>FI Counseling (Girls)</div>
+                <div class="col-sm-12 col-md-1"><span class="table-mobile-label">Quarter No. : </span>-</div>
+                <div class="col-sm-12 col-md-2"><span class="table-mobile-label">PBX(O) : </span>+91-532-2271558</div>
+                <div class="col-sm-12 col-md-2"><span class="table-mobile-label">Mobile : </span>9935249342</div>
+                <div class="col-sm-12 col-md-3"><span class="table-mobile-label">Email : </span>vibhuti@mnnit.ac.in</div>
+              </div>
+              <div class="row table-row">
+                <div class="col-sm-12 col-md-2"><span class="table-mobile-label">Name : </span>Dr. Naresh Kumar</div>
+                <div class="col-sm-12 col-md-2"><span class="table-mobile-label">Designation : </span>FI (Foreign Students)</div>
+                <div class="col-sm-12 col-md-1"><span class="table-mobile-label">Quarter No. : </span>C-14</div>
+                <div class="col-sm-12 col-md-2"><span class="table-mobile-label">PBX(O) : </span>+91-532-2271271</div>
+                <div class="col-sm-12 col-md-2"><span class="table-mobile-label">Mobile : </span>9454200193</div>
+                <div class="col-sm-12 col-md-3"><span class="table-mobile-label">Email : </span>naresh@mnnit.ac.in</div>
+              </div>
+            </div>
+          </section>
+          <!-- End Contact Details -->
+
+          <!-- Footer -->
+          <footer>
+            <p class="copyright-content">Copyright © <a href="http://www.mnnit.ac.in" style="color:white;">MNNIT</a> - All Rights Reserved Developed & Maintained By : Web Team</p>
+          </footer>
+          <!-- End of Footer -->
+        </div>
+        <!-- End of Scholarship and Fellowship section -->
+
+        <!-- Medals and Awards section -->
+        <div id="discipline-section">
+          <section>
+            <h2>Discipline and Proctorial Board</h2>
+            <div class="tile about-tile">
+              <h4>About Disciplinary Rules</h4>
+              <p>
+                Maintaining discipline is very important in all aspect of the life
+                and it is achieved by control, regulation, self-restraint (patience)
+                and courtesy. To run any organization in a disciplined way some rules
+                and regulations are formed and members of the organization are required
+                to follow those rules and regulations. Motilal Nehru National Institute
+                of Technology Allahabad, Prayagraj has also certain rules and regulations
+                and students are required to follow those rules for making a healthy
+                environment in the Institute campus and enabling them to become a
+                responsible citizen of India.
+                </br></br>
+                Students are supposed to follow the clause of discipline mentioned
+                in the Ordinances [Clause 15 of Ordinances for Doctoral Programme
+                and Masters Programme (for students of doctoral and Master’s Programme),
+                and Clause 12 (for for undergraduate students). In addition, they
+                are required to follow the hostel rule. They are not supposed to
+                keep any kind of motorized vehicle during entire period of their
+                study at MNNIT Allahabad, Prayagraj .
+                </br></br>
+                A ten member Proctorial Board is there to look into any act of
+                indiscipline by the Students. A student may be called to appear
+                before the Board in case he/she has violated the rules and regulations
+                of the Institute or tried to disturb the congenial atmosphere of the
+                Institute .
+              </p>
+            </div>
+          </section>
+
+          <!-- Black dot Reprecussions -->
+          <section class="black-dot-detail">
+            <h4>Contact Details</h4>
+            <div class="table">
+              <div class="table-header hide-header-sm">
+                <h6 class="col-2">S.No.</h6>
+                <h6 class="col-4">Number of Blackdots</h6>
+                <h6 class="col-6">Quarter No.</h6>
+              </div>
+              <div class="row table-row">
+                <div class="col-sm-12 col-md-2">1.</div>
+                <div class="col-sm-12 col-md-4"><b>One Black Dot</b></div>
+                <div class="col-sm-12 col-md-6 black-dot-rules">
+                  <h6><b>Compulsory :</b></h6>
+                  <ul>
+                    <li>1. Warning Letter</li>
+                    <li>2. Yoga classes(one semester)</li>
+                    <li>3. NSS work(one semester)</li>
+                  </ul>
+                  <h6><b>Optional :</b></h6>
+                  <ul>
+                    <li>1. Academic Probation (one month/one semester)</li>
+                    <li>2. Mention in Character Certificate</li>
+                    <li>3. Information to Parents</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="row table-row">
+                <div class="col-sm-12 col-md-2">2.</div>
+                <div class="col-sm-12 col-md-4"><b>Two Black Dot</b></div>
+                <div class="col-sm-12 col-md-6 black-dot-rules">
+                  <h6><b>Compulsory :</b></h6>
+                  <ul>
+                    <li>1. Warning Letter</li>
+                    <li>2. Yoga classes(one semester)</li>
+                    <li>3. NSS work(one semester)</li>
+                    <li>4. Academic Probation (one semester)</li>
+                    <li>5. Information to Parents</li>
+                  </ul>
+                  <h6><b>Optional :</b></h6>
+                  <ul>
+                    <li>1. Mention in Character Certificate</li>
+                    <li>2. Temporary expulsion from the hostel</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="row table-row">
+                <div class="col-sm-12 col-md-2">3.</div>
+                <div class="col-sm-12 col-md-4"><b>Three Black Dot</b></div>
+                <div class="col-sm-12 col-md-6 black-dot-rules">
+                  <h6><b>Compulsory :</b></h6>
+                  <ul>
+                    <li>1. Warning Letter</li>
+                    <li>2. Yoga classes(one semester)</li>
+                    <li>3. NSS work(one semester)</li>
+                    <li>4. Academic Probation (one semester)</li>
+                    <li>5. Information to Parents</li>
+                  </ul>
+                  <h6><b>Optional :</b></h6>
+                  <ul>
+                    <li>1. Mention in Character Certificate</li>
+                    <li>2. Expulsion from the hostel for one semester</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="row table-row">
+                <div class="col-sm-12 col-md-2">4.</div>
+                <div class="col-sm-12 col-md-4"><b>Four Black Dot</b></div>
+                <div class="col-sm-12 col-md-6 black-dot-rules">
+                  <h6><b>Compulsory :</b></h6>
+                  <ul>
+                    <li>1. Warning Letter</li>
+                    <li>2. Yoga classes(one semester)</li>
+                    <li>3. NSS work(one semester)</li>
+                    <li>4. Academic Probation (one semester)</li>
+                    <li>5. Information to Parents</li>
+                    <li>6. Mention in Character Certificate</li>
+                  </ul>
+                  <h6><b>Optional :</b></h6>
+                  <ul>
+                    <li>1. Expulsion from the hostel for one semester</li>
+                    <li>2. Debarred from the Campus Placement</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="row table-row">
+                <div class="col-sm-12 col-md-2">5.</div>
+                <div class="col-sm-12 col-md-4"><b>Five Black Dot</b></div>
+                <div class="col-sm-12 col-md-6 black-dot-rules">
+                  <h6><b>Compulsory :</b></h6>
+                  <ul>
+                    <li>1. Expulsion from the Institute</li>
+                    <li>2. Mention in Character Certificate</li>
+                    <li>3. Information to Parents</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <ol class="ordered-list">
+              <li>
+                <div class="numbered-icon">01</div>
+                <p>Under academic probation, a student is required to sign under
+                   camera on a register kept in the office of the Chief Proctor
+                   from Monday to Saturday and on a register kept in the office
+                   of the concerned Hostel on Sunday and Institute holidays.
+                </p>
+              </li>
+              <li>
+                <div class="numbered-icon">02</div>
+                <p>For the case of Yoga classes and NSS work, a student will be
+                   required to get a certification from the official concerned
+                   for the successful completion of the classes/work.</p>
+              </li>
+              <li>
+                <div class="numbered-icon">03</div>
+                <p>One semester indicates days equivalent to one complete semester.</p>
+              </li>
+            </ol>
+          </section>
+          <!-- End Black dot Reprecussions -->
+
+          <!-- Proctoral Board -->
+          <section class="proctoral-board">
+            <h4>Proctoral Board</h4>
+            <div class="table">
+              <div class="table-header">
+                <h6 class="col-2">S.No.</h6>
+                <h6 class="col-6">Members</h6>
+                <h6 class="col-4">Designation</h6>
+              </div>
+              <div class="table-row">
+                <div class="col-2">1</div>
+                <div class="col-6">Chief Proctor & Dean (SW)</div>
+                <div class="col-4">Chairperson</div>
+              </div>
+              <div class="table-row">
+                <div class="col-2">2</div>
+                <div class="col-6">Chief Warden (Boys)</div>
+                <div class="col-4">Member</div>
+              </div>
+              <div class="table-row">
+                <div class="col-2">3</div>
+                <div class="col-6">Chief Warden (Girls)</div>
+                <div class="col-4">Member</div>
+              </div>
+              <div class="table-row">
+                <div class="col-2">4</div>
+                <div class="col-6">Professor In-charge, Training and Placement Cell</div>
+                <div class="col-4">Member</div>
+              </div>
+              <div class="table-row">
+                <div class="col-2">5</div>
+                <div class="col-6">Chairperson, Women Grievance Cell</div>
+                <div class="col-4">Member</div>
+              </div>
+              <div class="table-row">
+                <div class="col-2">6</div>
+                <div class="col-6">Chairperson, SC/ST Cell</div>
+                <div class="col-4">Member</div>
+              </div>
+              <div class="table-row">
+                <div class="col-2">7</div>
+                <div class="col-6">Two Head of the Department nominated by rotation for one year</div>
+                <div class="col-4">Member</div>
+              </div>
+              <div class="table-row">
+                <div class="col-2">8</div>
+                <div class="col-6">Proctor (Boys)</div>
+                <div class="col-4">Member</div>
+              </div>
+              <div class="table-row">
+                <div class="col-2">9</div>
+                <div class="col-6">Proctor (Girls)</div>
+                <div class="col-4">Member</div>
+              </div>
+            <div>
+          </section>
+          <!-- End Proctoral Board -->
+
+          <!-- Footer -->
+          <footer>
+            <p class="copyright-content">Copyright © <a href="http://www.mnnit.ac.in" style="color:white;">MNNIT</a> - All Rights Reserved Developed & Maintained By : Web Team</p>
+          </footer>
+          <!-- End of Footer -->
+        </div>
+        <!-- End of Medals and Awards section -->
+
+        <!-- Insurance and Mediclaim section -->
+        <div id="character-section">
+          <section>
+            <h2>I-Card and Character Certiicate</h2>
+            <div class="tile about-tile">
+              <h4>Issue of I-Card to Student</h4>
+              <p>
+                I-Card is issued to all registered students of the Institute in
+                assistance with Central Library of the Institute in 1st semester
+                itself. Students are supposed to keep their I-Card with them in
+                the Institute campus every time. At the end of the course, I-Card
+                has to be deposited in the Office of Dean (Student Welfare) when
+                a student gets “No Dues Certificate” from Dean (Student Welfare)
+                Office.
+                <br><br>
+                A new I-Card may be issued to a student in case I-Card is lost and
+                for the same a F.I.R is lodged by the concerned student in the
+                nearest Police station. Regarding issuing of new ICard, the concerned
+                student is required to write an application to Chief Proctor duly
+                forwarded by concerned Head/Chairperson of the Department/Cell/School
+                with following enclosures.
+              </p>
+            </div>
+            <ol class="ordered-list">
+              <li>
+                <div class="numbered-icon">01</div>
+                <p>Self attested original copy of the F.I.R.</p>
+              </li>
+              <li>
+                <div class="numbered-icon">02</div>
+                <p>A copy of profile of the student generated from Academic Portal of the Institute (Self Attested).</p>
+              </li>
+              <li>
+                <div class="numbered-icon">03</div>
+                <p>Original receipt of Rs. 25.00 deposited in the Accounts Section of the Institute.</p>
+              </li>
+            </ol>
+            <p class="side-note">For issue of new I-Card due to some defect generated in the I-Card, student shall enclose documents given on point No. 2 and 3 only.</p>
+          </section>
+
+          <!-- Issue Character Certificate -->
+          <section>
+            <div class="tile about-tile">
+              <h4>Issue of Character Certificate</h4>
+              <p>
+                It is assumed that a student will collect his/her Character Certificate
+                before leaving the Institute after completion of his/her academic
+                programme (B.Tech/M.Tech/M.C.A/M.B.A/ M.Sc./Ph.D.). To get Character
+                Certificate, a student is required to submit an application in “DSW-06”
+                format with enclosures as given on Point No. 9 of the same format.
+                <br><br>
+                To get Character Certificate by post, a student is required to send
+                the application in format “DSW-06” with enclosures as given on Point
+                No. 9 of the format along with a self addressed envelope with postal
+                stamp (to send the certificate on address for correspondence provided
+                 by the student).
+              </p>
+            </div>
+          </section>
+          <!-- End Issue Character Certificate -->
+
+          <!-- Footer -->
+          <footer>
+            <p class="copyright-content">Copyright © <a href="http://www.mnnit.ac.in" style="color:white;">MNNIT</a> - All Rights Reserved Developed & Maintained By : Web Team</p>
+          </footer>
+          <!-- End of Footer -->
+        </div>
+        <!-- End of Insurance and Mediclaim section -->
+      </div>
+      <!-- End of Body Container -->
+    </div>
+    <!-- End of Right side body -->
+
+    <!-- Overlay and Popups -->
+    <div class="overlay">
+      <form id="student-login-popup">
+        <div class="popup-header">
+          <h4>Student Login</h4>
+          <div class="close-icon" onclick="popup(0)"></div>
+        </div>
+        <input type="text" name="username" value="" placeholder="Registration No."/>
+        <input type="password" name="password" value="" placeholder="Password"/>
+        <input type="submit" value="Login"/>
+        <p class="form-note">
+          NOTE: Password for first time login:
+          <br>
+          1. Your Date of Birth in DDMMYYYY Format
+          <br>
+          2. For M.Tech. Registration number starting from 2018: MMDDYYYY or MDYYYY
+          <br><br>
+          For problem in login write to deansw@mnnit.ac.in with Registration number and DOB
+        </p>
+      </form>
+    </div>
+    <div class="overlay">
+      <form id="department-login-popup">
+        <div class="popup-header">
+          <h4>Department Login</h4>
+          <div class="close-icon" onclick="popup(1)"></div>
+        </div>
+        <input type="text" name="username" value="" placeholder="Username"/>
+        <input type="password" name="password" value="" placeholder="Password"/>
+        <input type="submit" value="Login"/>
+      </form>
+    </div>
+    <!-- End of Overlay and Popups -->
+
+		<!-- Mobile Side Bar -->
+		<div class="mobile-sidebar">
+			<div class="close-icon"></div>
+			<div class="profile-settings-container">
+				<a href="#"><div class="profile-settings"></div></a>
+				<div class="sub-settings-container">
+					<a href="#">
+						<div class="profile-submenu-icon" id="logout"></div>
+						<p>Sign Out</p>
+					</a>
+				</div>
+			</div>
+			<a href="/"><div class="card-header">Home</div></a>
+			<!-- Drop Down Accordion Code -->
+			<div id="accordion">
+  			<div class="card">
+    			<div class="card-header" id="headingOne">
+        		<div class="collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Students Welfare Office</div>
+    			</div>
+    			<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+      			<div class="card-body">
+							<ul>
+								<a href="scholarship?tab=scholarship-section"><li>Scholarship and Fellowship</li></a>
+	            	<a href="scholarship?tab=medals-section"><li>Medals and Awards</li></a>
+	            	<a href="scholarship?tab=mediclaim-section"><li>Insuarance and Mediclaim</li></a>
+	            	<a href="scholarship?tab=antiRagging-section"><li>Anti-Ragging Initiatve</li></a>
+	            	<a href="scholarship?tab=counseling-section"><li>Counseling and Assistance</li></a>
+							</ul>
+      			</div>
+    			</div>
+  			</div>
+  			<div class="card">
+    			<div class="card-header" id="headingTwo">
+        		<div class="collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Chief Proctor Office</div>
+    			</div>
+    			<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+      			<div class="card-body">
+							<ul>
+								<a href="proctor?tab=proctor-section"><li>About Chief Proctor Office</li></a>
+								<a href="proctor?tab=discipline-section"><li>Discipline and Proctorial Board</li></a>
+								<a href="proctor?tab=character-section"><li>I-Card and Character Certificate</li></a>
+							</ul>
+      			</div>
+    			</div>
+  			</div>
+  			<div class="card">
+    			<div class="card-header" id="headingThree">
+        		<div class="collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Chief Warden Office</div>
+    			</div>
+    			<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+      			<div class="card-body">
+        			<ul>
+                <a href="warden?tab=warden-section"><li>About Chief Warden Office</li></a>
+								<a href="warden?tab=team-section"><li>Team of Wardens</li></a>
+                <a href="warden?tab=hostelStructure-section"><li>Hostel Structure</li></a>
+								<a href="warden?tab=hostelManagement-section"><li>Hostel Management</li></a>
+                <a href="warden?tab=mess-section"><li>Mess Management</li></a>
+							</ul>
+      			</div>
+    			</div>
+  			</div>
+        <div class="card">
+    			<div class="card-header" id="headingFour">
+        		<div class="collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Student Activity Office</div>
+    			</div>
+    			<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+      			<div class="card-body">
+        			<ul>
+                <a href="student?tab=undertaking-section"><li>Undertakings and Forms</li></a>
+								<a href="http://www.mnnit.ac.in/index.php/notice-board" target="_blank"><li>Student Notice</li></a>
+							</ul>
+      			</div>
+    			</div>
+  			</div>
+        <div class="card">
+    			<div class="card-header" id="headingFive">
+        		<div class="collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Gallery</div>
+    			</div>
+    			<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+      			<div class="card-body">
+        			<ul>
+                <a href="gallery?tab=institute-section"><li>Institute Gallery</li></a>
+								<a href="gallery?tab=bharat-section"><li>Ek Bharat Shreshtha Bharat Gallery</li></a>
+                <a href="gallery?tab=voter-section"><li>Voter Awareness Paiting Competition Gallery</li></a>
+							</ul>
+      			</div>
+    			</div>
+  			</div>
+			</div>
+			<!-- End of Drop Down Accordion Code -->
+		</div>
+		<!-- End of Mobile Side Bar -->
+  	</body>
+		<script>
+
+		</script>
+  	<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+  	<script type="text/javascript" src="js/script.js"></script>
+	</html>

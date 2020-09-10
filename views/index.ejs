@@ -1,0 +1,425 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Welfare Office, MNNIT</title>
+    <link rel="icon" href="media/logo-short.png">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <!-- Desktop Side bar -->
+    <div class="sidebar">
+      <!-- hamburger -->
+      <div id="nav-icon3">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <!-- End of hamburger -->
+
+      <!-- Desktop Sidemenu list -->
+      <ul class="side-menu">
+        <!-- Home link Icon -->
+        <li>
+        <a href="/">
+          <div class="menu-icon active" id="icon-1"></div>  <!-- Active Icon -->
+          <p class="menu-option">Home</p>
+        </a>
+      </li>
+      <!-- End of Home link Icon -->
+
+      <!-- Scholarship link Icon -->
+        <li class="scholarship-tab">
+          <ul class="submenu scholarship-tab-submenu">
+            <li><a href="scholarship?tab=scholarship-section">Scholarship and Fellowship</a></li>
+            <li><a href="scholarship?tab=medals-section">Medals and Awards</a></li>
+            <li><a href="scholarship?tab=mediclaim-section">Insuarance and Mediclaim</a></li>
+            <li><a href="scholarship?tab=antiRagging-section">Anti-Ragging Initiatve</a></li>
+            <li><a href="scholarship?tab=counseling-section">Counseling and Assistance</a></li>
+          </ul>
+        <a href="#">
+          <div class="menu-icon" id="icon-2"></div>
+          <p class="menu-option">Students Welfare Office</p>
+        </a>
+      </li>
+      <!-- End of Scholarship link Icon -->
+
+      <!-- Proctor link Icon -->
+        <li class="proctor-tab">
+          <ul class="submenu proctor-tab-submenu">
+            <li><a href="proctor?tab=proctor-section">About Chief Proctor Office</a></li>
+            <li><a href="proctor?tab=discipline-section">Discipline and Proctorial Board</a></li>
+            <li><a href="proctor?tab=character-section">I-Card and Character Certificate</a></li>
+          </ul>
+        <a href="#">
+          <div class="menu-icon" id="icon-3"></div>
+          <p class="menu-option">Chief Proctor Office</p>
+        </a>
+      </li>
+      <!-- End of Proctor link Icon -->
+
+      <!-- Warden link Icon -->
+        <li class="warden-tab">
+          <ul class="submenu warden-tab-submenu">
+            <li><a href="warden?tab=warden-section">About Chief Warden Office</a></li>
+            <li><a href="warden?tab=team-section">Team of Wardens</a></li>
+            <li><a href="warden?tab=hostelStructure-section">Hostel Structure</a></li>
+            <li><a href="warden?tab=hostelManagement-section">Hostel Management</a></li>
+            <li><a href="warden?tab=mess-section">Mess Management</a></li>
+          </ul>
+        <a href="#">
+          <div class="menu-icon" id="icon-4"></div>
+          <p class="menu-option">Chief Warden Office</p>
+        </a>
+      </li>
+      <!-- End of Warden link icon -->
+
+      <!-- Student link Icon -->
+        <li class="student-tab">
+          <ul class="submenu student-tab-submenu">
+            <li><a href="student?tab=undertaking-section">Undertakings and Forms</a></li>
+            <li><a href="http://www.mnnit.ac.in//.php/notice-board" target="_blank">Student Notice</a></li>
+          </ul>
+        <a href="#">
+          <div class="menu-icon" id="icon-5"></div>
+          <p class="menu-option">Student Activity Office</p>
+        </a>
+      </li>
+      <!-- End of Student link icon -->
+
+      <!-- Gallery link Icon -->
+        <li class="gallery-tab">
+          <ul class="submenu gallery-tab-submenu">
+            <li><a href="gallery?tab=institute-section">Institute Gallery</a></li>
+            <li><a href="gallery?tab=bharat-section">Ek Bharat Shreshtha Bharat Gallery</a></li>
+            <li><a href="gallery?tab=voter-section">Voter Awareness Paiting Competition Gallery</a></li>
+          </ul>
+        <a href="#">
+          <div class="menu-icon" id="icon-6"></div>
+          <p class="menu-option">Gallery</p>
+        </a>
+      </li>
+      <!-- End of Gallery link icon -->
+      </ul>
+      <!-- End of Desktop Sidemenu List -->
+    </div>
+    <!-- End of Desktop Side bar -->
+
+    <!-- Right Side Body -->
+    <div class="body">
+      <!-- Logo Header -->
+      <div class="header">
+          <a href="/"><div class="logo"></div></a>
+          <!-- Profile with submenu -->
+          <div class="profile">
+            <ul class="profile-submenu">
+							<li>
+                <a href="studentprofile?tab=student-profile">
+                  <p>Profile</p>
+                  <div id="profile-menu-profile" class="profile-submenu-icon"></div>
+                </a>
+              </li>
+              <li>
+                <a onclick="popup(0);" href="#">
+                  <p>Student Login</p>
+                  <div id="profile-menu-student-login" class="profile-submenu-icon"></div>
+                </a>
+              </li>
+              <li>
+                <a onclick="popup(1);" href="#">
+                  <p>Department Login</p>
+                  <div id="profile-menu-department-login" class="profile-submenu-icon"></div>
+                </a>
+              </li>
+              <!-- Display logout option only when logged in -->
+              <li>
+                <a href="logout.php">
+                  <p>Sign Out<p>
+                  <div id="profile-menu-signout" class="profile-submenu-icon"></div>
+                </a>
+              </li>
+              <!-- Display logout option only when loggd in -->
+            </ul>
+          </div>
+
+
+					<div class="moburger" id="nav-icon3">
+		        <span></span>
+		        <span></span>
+		        <span></span>
+		        <span></span>
+		      </div>
+
+
+          <!-- End of profile with submenu -->
+      </div>
+      <!-- End of Logo Header -->
+      <h2><b>Dean Office</b>(Student Welfare) and Chief Proctor</h2>
+      <!-- Body Container -->
+      <div class="home-grid">
+        <!-- Home Introduction -->
+        <div class="tile about-tile">
+          <h4>About Dean (Student Welfare) Office</h4>
+          <p>
+            Dean (Student Welfare) office covers all facets of the student's life at MNNIT Allahabad, whether it is a hostel life or life at play ground or life in classes.
+            In general, it works towards the welfare and well being of the students in the campus, so that a healthy environment is created for all round personality
+            growth of the students.
+            <br><br>
+            To accomplish this, Institute has a student activity centre which organizes different activities such as Avishkar, Gnosomaia, Culrav, Yoga class, Personality
+            development classes and different sports activities such as Annual athletic meet, Josh and J.Lal etc. Students are encouraged to participate in these
+            activities in addition of joining either N.C.C or N.S.S. In addition, various other activities are undertaken at department and Institute level for all round
+            personality growth of the students.
+          </p>
+        </div>
+        <!-- End Home Introduction -->
+
+        <!-- Office Activities -->
+        <section class="activities">
+          <h4>Activities Undertaken By This Office</h4>
+          <ul class="activity-list">
+            <li>
+              <div class="activity-icon scholarship-icon"></div>
+              <div class="activity-content">
+                <h5>Scholarships and Fellowships</h5>
+                <p>The office processes M.Tech. and Ph.D. fellowship and different scholarships provided by different agencies for B.Tech M.B.A/M.C.A/M.Sc./M.S.W. students.</p>
+              </div>
+            </li>
+            <li>
+              <div class="activity-icon mediclaim-icon"></div>
+              <div class="activity-content">
+                <h5>Mediclaim facility to the students</h5>
+                <p>
+                  The office processes M.Tech. and Ph.D. fellowship and different
+                  scholarships provided by different agencies for B.Tech M.B.A/M.C.A/M.Sc./M.S.W.
+                  students.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="activity-icon award-icon"></div>
+              <div class="activity-content">
+                <h5>Gold Medals and Awards</h5>
+                <p>Providing sponsored Gold Medal and awards to the eligible students in convocation.</p>
+              </div>
+            </li>
+            <li>
+              <div class="activity-icon certificate-icon"></div>
+              <div class="activity-content">
+                <h5>Character Certificates</h5>
+                <p>Issue of Character Certificates to the students after the completion of their course.</p>
+              </div>
+            </li>
+            <li>
+              <div class="activity-icon counseling-icon"></div>
+              <div class="activity-content">
+                <h5>Student Counselling</h5>
+                <p>
+                  Counseling Services include psychological, mental or emotional,
+                  Education and Career counseling. At the University level , the idea
+                  is guiding and assisting students throughout their study at
+                  the institute, providing appropriate assistance at each stage of
+                  the student's development, growth or progress
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <!-- End office activities -->
+
+      <!-- Office Members -->
+      <section class="office-members">
+        <h4>Members Of The Office</h4>
+        <div class="member-grid">
+          <div class="member-card">
+            <div class="member-img" style="background-image : url(media/faculty/kn_pandey.jpg);"></div>
+            <h5>Dr. K.N. Pandey</h5>
+            <p>Dean(Student Welfare)</p>
+          </div>
+          <div class="member-card">
+            <div class="member-img" style="background-image : url(media/faculty/ced_rakesh.jpg);"></div>
+            <h5>Dr. Rakesh Kumar</h5>
+            <p>Associate Dean(Student Welfare)</p>
+          </div>
+          <div class="member-card">
+            <div class="member-img" style="background-image : url(media/faculty/A_Kumar.jpg);"></div>
+            <h5>Dr. Abhishek Kumar</h5>
+            <p>Faculty In charge(Scholarship)</p>
+          </div>
+          <div class="member-card">
+            <div class="member-img" style="background-image : url(media/faculty/phy_ako.jpg);"></div>
+            <h5>Dr. Animesh Kumar Ojha</h5>
+            <p>Faculty In charge(Student Counseling Boys)</p>
+          </div>
+          <div class="member-card">
+            <div class="member-img" style="background-image : url(media/faculty/Vibhuti_maam.jpg);"></div>
+            <h5>Dr. Vibhuti Tripathi</h5>
+            <p>Faculty In charge(Student Counseling Girls)</p>
+          </div>
+          <div class="member-card">
+            <div class="member-img" style="background-image : url(media/faculty/naresh_photo_web.png);"></div>
+            <h5>Dr. Naresh Kumar</h5>
+            <p>Faculty In charge(Foreign Students)</p>
+          </div>
+          <div class="member-card">
+            <div class="member-img" style="background-image : url(media/faculty/basant.jpg);"></div>
+            <h5>Dr. Basant Kumar</h5>
+            <p>Proctor(Boys)</p>
+          </div>
+          <div class="member-card">
+            <div class="member-img" style="background-image : url(media/faculty/shalinee_m.jpg);"></div>
+            <h5>Dr. (Mrs.) Shalinee Shukla</h5>
+            <p>Proctor(Girls)</p>
+          </div>
+        </div>
+      </section>
+      <!-- End Office Members -->
+      </div>
+      <!-- End Body Container -->
+
+      <!-- End of Body Grid Container -->
+
+      <!-- Footer -->
+      <footer>
+        <p class="copyright-content">Copyright © <a href="http://www.mnnit.ac.in" style="color:white;">MNNIT</a> - All Rights Reserved Developed & Maintained By : Web Team</p>
+      </footer>
+      <!-- End of Footer -->
+    </div>
+    <!-- End of Right side body -->
+
+    <!-- Overlay and Popups -->
+    <div class="overlay">
+      <form id="student-login-popup">
+        <div class="popup-header">
+          <h4>Student Login</h4>
+          <div class="close-icon" onclick="popup(0)"></div>
+        </div>
+        <input type="text" name="username" value="" placeholder="Registration No."/>
+        <input type="password" name="password" value="" placeholder="Password"/>
+        <input type="submit" value="Login"/>
+        <p class="form-note">
+          NOTE: Password for first time login:
+          <br>
+          1. Your Date of Birth in DDMMYYYY Format
+          <br>
+          2. For M.Tech. Registration number starting from 2018: MMDDYYYY or MDYYYY
+          <br><br>
+          For problem in login write to deansw@mnnit.ac.in with Registration number and DOB
+        </p>
+      </form>
+    </div>
+    <div class="overlay">
+      <form id="department-login-popup">
+        <div class="popup-header">
+          <h4>Department Login</h4>
+          <div class="close-icon" onclick="popup(1)"></div>
+        </div>
+        <input type="text" name="username" value="" placeholder="Username"/>
+        <input type="password" name="password" value="" placeholder="Password"/>
+        <input type="submit" value="Login"/>
+      </form>
+    </div>
+    <!-- End of Overlay and Popups -->
+
+		<!-- Mobile Side Bar -->
+		<div class="mobile-sidebar">
+			<div class="close-icon"></div>
+			<div class="profile-settings-container">
+				<a href="#"><div class="profile-settings"></div></a>
+				<div class="sub-settings-container">
+					<a href="#">
+						<div class="profile-submenu-icon" id="logout"></div>
+						<p>Sign Out</p>
+					</a>
+				</div>
+			</div>
+			<a href="/"><div class="card-header">Home</div></a>
+			<!-- Drop Down Accordion Code -->
+			<div id="accordion">
+  			<div class="card">
+    			<div class="card-header" id="headingOne">
+        		<div class="collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Students Welfare Office</div>
+    			</div>
+    			<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+      			<div class="card-body">
+							<ul>
+								<a href="scholarship?tab=scholarship-section"><li>Scholarship and Fellowship</li></a>
+	            	<a href="scholarship?tab=medals-section"><li>Medals and Awards</li></a>
+	            	<a href="scholarship?tab=mediclaim-section"><li>Insuarance and Mediclaim</li></a>
+	            	<a href="scholarship?tab=antiRagging-section"><li>Anti-Ragging Initiatve</li></a>
+	            	<a href="scholarship?tab=counseling-section"><li>Counseling and Assistance</li></a>
+							</ul>
+      			</div>
+    			</div>
+  			</div>
+  			<div class="card">
+    			<div class="card-header" id="headingTwo">
+        		<div class="collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Chief Proctor Office</div>
+    			</div>
+    			<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+      			<div class="card-body">
+							<ul>
+								<a href="proctor?tab=proctor-section"><li>About Chief Proctor Office</li></a>
+								<a href="proctor?tab=discipline-section"><li>Discipline and Proctorial Board</li></a>
+								<a href="proctor?tab=character-section"><li>I-Card and Character Certificate</li></a>
+							</ul>
+      			</div>
+    			</div>
+  			</div>
+  			<div class="card">
+    			<div class="card-header" id="headingThree">
+        		<div class="collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Chief Warden Office</div>
+    			</div>
+    			<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+      			<div class="card-body">
+        			<ul>
+                <a href="warden?tab=warden-section"><li>About Chief Warden Office</li></a>
+								<a href="warden?tab=team-section"><li>Team of Wardens</li></a>
+                <a href="warden?tab=hostelStructure-section"><li>Hostel Structure</li></a>
+								<a href="warden?tab=hostelManagement-section"><li>Hostel Management</li></a>
+                <a href="warden?tab=mess-section"><li>Mess Management</li></a>
+							</ul>
+      			</div>
+    			</div>
+  			</div>
+        <div class="card">
+    			<div class="card-header" id="headingFour">
+        		<div class="collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Student Activity Office</div>
+    			</div>
+    			<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+      			<div class="card-body">
+        			<ul>
+                <a href="student?tab=undertaking-section"><li>Undertakings and Forms</li></a>
+								<a href="http://www.mnnit.ac.in/index.php/notice-board" target="_blank"><li>Student Notice</li></a>
+							</ul>
+      			</div>
+    			</div>
+  			</div>
+        <div class="card">
+    			<div class="card-header" id="headingFive">
+        		<div class="collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Gallery</div>
+    			</div>
+    			<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+      			<div class="card-body">
+        			<ul>
+                <a href="gallery?tab=institute-section"><li>Institute Gallery</li></a>
+								<a href="gallery?tab=bharat-section"><li>Ek Bharat Shreshtha Bharat Gallery</li></a>
+                <a href="gallery?tab=voter-section"><li>Voter Awareness Paiting Competition Gallery</li></a>
+							</ul>
+      			</div>
+    			</div>
+  			</div>
+			</div>
+			<!-- End of Drop Down Accordion Code -->
+		</div>
+		<!-- End of Mobile Side Bar -->
+  	</body>
+		<script>
+
+		</script>
+  	<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+  	<script type="text/javascript" src="js/script.js"></script>
+	</html>
