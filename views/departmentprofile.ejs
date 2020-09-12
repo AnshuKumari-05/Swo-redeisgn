@@ -35,6 +35,7 @@
       <!-- End of Profile link Icon -->
 
       <!-- Proctor link Icon -->
+      <% if(designation == "Chief Proctor") { %>
         <li class="proctor-tab">
           <ul class="submenu proctor-tab-submenu">
             <li><a href="departmentprofile?tab=add-punishment">Add Student Punishments</a></li>
@@ -45,15 +46,18 @@
           <p class="menu-option">Chief Proctor Office</p>
         </a>
       </li>
+      <% } %>
       <!-- End of Proctor link Icon -->
 
       <!-- No Dues -->
+      <% if(designation != "Dean Academics" && designation != "FI (Admission)" && designation != "FI Examination") { %>
         <li class="nodue-request">
         <a href="departmentprofile?tab=nodue-request">
           <div class="menu-icon" id="icon-5"></div>
           <p class="menu-option">No Due Requests</p>
         </a>
       </li>
+      <% } %>
       <!-- End of No Dues link Icon -->
 
       </ul>
@@ -81,7 +85,7 @@
               </li>
               <!-- Display logout option only when logged in -->
               <li>
-                <a href="logout.php">
+                <a href="/logout">
                   <p>Sign Out<p>
                   <div id="profile-menu-signout" class="profile-submenu-icon"></div>
                 </a>
@@ -103,7 +107,7 @@
 
       <!-- Body Container -->
       <div class="carousel-grid">
-        <!--========================== Start of Library Profile ============================ -->
+        <!--===================================== Start of Profile ==================================== -->
         <div id="department-profile">
           <!-- Department Information -->
           <section>
@@ -148,9 +152,10 @@
           </footer>
           <!-- End of Footer -->
         </div>
-        <!--============================== End of Library Profile ======================================-->
+        <!--============================================ End of Profile ======================================-->
 
-        <!--========================== Start of Add Punishment ============================ -->
+        <!--======================================== Start of Add Punishment ============================ -->
+        <% if(designation == "Chief Proctor") { %>
         <div id="add-punishment">
           <section>
             <h2>Chief Proctor's Office</h2>
@@ -258,9 +263,9 @@
           </footer>
           <!-- End of Footer -->
         </div>
-        <!--============================== End of add Punishment ======================================-->
+        <!--===================================== End of add Punishment =============================================-->
 
-        <!--========================== Start of View Punishment ============================ -->
+        <!--==================================== Start of View Punishment ============================ -->
         <div id="view-punishment">
           <section>
             <h2>Chief Proctor's Office</h2>
@@ -291,7 +296,9 @@
           <!-- End of Footer -->
         </div>
         <!--============================== End of View Punishment ======================================-->
+        <% } %>
 
+        <% if(designation != "Dean Academics" && designation != "FI (Admission)" && designation != "FI Examination") { %>
         <!--============================ Start of No Due  ====================================-->
         <div id="nodue-request">
           <section>
@@ -436,6 +443,7 @@
           <!-- End of Footer -->
         </div>
         <!--=============================== End of No Due ====================================================-->
+        <% } %>
       </div>
       <!-- End of Body Container -->
     </div>
@@ -466,7 +474,7 @@
 						<div class="profile-submenu-icon" id="change-password"></div>
 						<p>Change Password</p>
 					</a>
-					<a href="#">
+					<a href="/logout">
 						<div class="profile-submenu-icon" id="logout"></div>
 						<p>Sign Out</p>
 					</a>

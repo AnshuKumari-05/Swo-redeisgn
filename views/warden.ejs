@@ -116,12 +116,7 @@
           <!-- Profile with submenu -->
           <div class="profile">
             <ul class="profile-submenu">
-							<li>
-                <a href="studentprofile?tab=student-profile">
-                  <p>Profile</p>
-                  <div id="profile-menu-profile" class="profile-submenu-icon"></div>
-                </a>
-              </li>
+              <% if(loggedInAs == undefined) { %>
               <li>
                 <a onclick="popup(0);" href="#">
                   <p>Student Login</p>
@@ -134,12 +129,31 @@
                   <div id="profile-menu-department-login" class="profile-submenu-icon"></div>
                 </a>
               </li>
+              <% } %>
+              <% if(loggedInAs == "student") { %>
               <li>
-                <a href="logout.php">
+                <a href="studentprofile?tab=student-profile">
+                  <p>Profile</p>
+                  <div id="profile-menu-profile" class="profile-submenu-icon"></div>
+                </a>
+              </li>
+              <% } %>
+              <% if(loggedInAs == "faculty") { %>
+              <li>
+                <a href="departmentprofile?tab=department-profile">
+                  <p>Profile</p>
+                  <div id="profile-menu-profile" class="profile-submenu-icon"></div>
+                </a>
+              </li>
+              <% } %>
+              <% if(loggedInAs != undefined) { %>
+              <li>
+                <a href="/logout">
                   <p>Sign Out<p>
                   <div id="profile-menu-signout" class="profile-submenu-icon"></div>
                 </a>
               </li>
+              <% } %>
             </ul>
           </div>
 
@@ -787,7 +801,7 @@
 
     <!-- Overlay and Popups -->
     <div class="overlay">
-      <form id="student-login-popup">
+      <form id="student-login-popup" action="/login/student" method="POST">
         <div class="popup-header">
           <h4>Student Login</h4>
           <div class="close-icon" onclick="popup(0)"></div>
@@ -807,7 +821,7 @@
       </form>
     </div>
     <div class="overlay">
-      <form id="department-login-popup">
+      <form id="department-login-popup" action="/login/faculty" method="POST">
         <div class="popup-header">
           <h4>Department Login</h4>
           <div class="close-icon" onclick="popup(1)"></div>
@@ -822,18 +836,40 @@
 		<!-- Mobile Side Bar -->
 		<div class="mobile-sidebar">
 			<div class="close-icon"></div>
-			<div class="profile-settings-container">
-				<a href="#"><div class="profile-settings"></div></a>
+      <div class="profile-settings-container">
+        <% if(loggedInAs == "student") { %>
+				<a href="studentprofile?tab=student-profile"><div class="profile-settings"></div></a>
+        <% } %>
+        <% if(loggedInAs == "faculty") { %>
+				<a href="departmentprofile?tab=department-profile"><div class="profile-settings"></div></a>
+        <% } %>
 				<div class="sub-settings-container">
-					<a href="#">
+          <% if(loggedInAs != undefined) { %>
+					<a href="/logout">
 						<div class="profile-submenu-icon" id="logout"></div>
 						<p>Sign Out</p>
 					</a>
+          <% } %>
 				</div>
 			</div>
 			<a href="/"><div class="card-header">Home</div></a>
 			<!-- Drop Down Accordion Code -->
 			<div id="accordion">
+        <% if(loggedInAs == undefined) { %>
+        <div class="card">
+    			<div class="card-header" id="headingZero">
+        		<div class="collapsed" data-toggle="collapse" data-target="#collapseZero" aria-expanded="true" aria-controls="collapseZero">Login</div>
+    			</div>
+    			<div id="collapseZero" class="collapse" aria-labelledby="headingZero" data-parent="#accordion">
+      			<div class="card-body">
+							<ul>
+								<a onclick="popup(0);"href="#"><li>Student Login</li></a>
+	            	<a onclick="popup(1);"href="#"><li>Department Login</li></a>
+							</ul>
+      			</div>
+    			</div>
+  			</div>
+        <% } %>
   			<div class="card">
     			<div class="card-header" id="headingOne">
         		<div class="collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Students Welfare Office</div>

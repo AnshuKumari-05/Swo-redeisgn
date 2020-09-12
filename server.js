@@ -1,18 +1,14 @@
-// database connection code .....
+// database connection code
 
 const mysql = require("mysql");
 
+// endpoints for the database connecting to the app
 const conn = mysql.createConnection({
-    // host : "172.31.12.222",
-    // port : 3306,
-    // database : "dsw",
-    // user : "dsw_database",
-    // password : "dswdsws@l"
-    host : "localhost",
-    // port : 3306,
-    database : "dsw_latest",
-    user : "root",
-    password : ""
+    host : "sql12.freesqldatabase.com",
+    database : "sql12365117",
+    user : "sql12365117",
+    password : "KSHPDlFLrw",
+    port : 3306
 });
 
 conn.connect( (err) =>{
