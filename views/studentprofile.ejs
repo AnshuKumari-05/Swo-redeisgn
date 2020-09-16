@@ -34,32 +34,17 @@
       </li>
       <!-- End of Profile link Icon -->
 
-      <!-- Apply fresh Scholarship -->
-        <li class="fresh-scholarship">
-        <a href="studentprofile?tab=fresh-scholarship">
-          <div class="menu-icon" id="icon-8"></div>
-          <p class="menu-option">Apply Fresh Scholarship</p>
-        </a>
-      </li>
-      <!-- End of Apply Fresh Scholarship link Icon -->
-
-      <!-- Applied Scholarship icon -->
-        <li class="applied-scholarship">
-        <a href="studentprofile?tab=applied-scholarship">
-          <div class="menu-icon" id="icon-2"></div>
-          <p class="menu-option">Applied Scholarship</p>
-        </a>
-      </li>
-      <!-- End of Applied Scholarship -->
-
-      <!-- Renewal of granted Scholarship -->
-        <li class="renewal-scholarship">
-        <a href="studentprofile?tab=renewal-scholarship">
-          <div class="menu-icon" id="icon-9"></div>
-          <p class="menu-option">Renewal of granted Scholarship</p>
-        </a>
-      </li>
-      <!-- End of Renewal of granted Scholarship icon -->
+      <li class="scholarship-tab">
+        <ul class="submenu scholarship-tab-submenu">
+          <li><a href="studentprofile?tab=fresh-scholarship">Apply Fresh Scholarship</a></li>
+          <li><a href="studentprofile?tab=applied-scholarship">Applied Scholarship</a></li>
+          <li><a href="studentprofile?tab=renewal-scholarship">Renewal of granted Scholarship</a></li>
+        </ul>
+      <a href="#">
+        <div class="menu-icon active" id="icon-2"></div>
+        <p class="menu-option">Student Scholarship</p>
+      </a>
+    </li>
 
       <!-- Punishment Icon -->
         <li class="punishment-details">
@@ -132,11 +117,11 @@
             <div class="academic-info">
               <div class="profile-pic"></div>
               <div class="profile-intro">
-                <h4>Ashish Kujur</h4>
-                <p>2019CA67</p>
+                <h4><%=student.student_name%></h4>
+                <p><%=student.registration_no%></p>
                 <ul>
-                  <li><b>Department : </b>Computer Science and Engineering</li>
-                  <li><b>Programme : </b>MCA</li>
+                  <li><b>Department : </b><%=student.department%></li>
+                  <li><b>Programme : </b><%=student.program%></li>
                 </ul>
                 <div class="edit-profile">
                   <button onclick="popup(0);" type="button" class="btn-solid-blue" name="button">Change Profile Picture</button>
@@ -149,21 +134,21 @@
                   <div class="academic-icon" id="icon-11"></div>
                   <div class="icon-desc">
                     <b>Branch</b>
-                    <p>NA</p>
+                    <p><%=student.branch%></p>
                   </div>
                 </div>
                 <div>
                   <div class="academic-icon" id="icon-12"></div>
                   <div class="icon-desc">
                     <b>Session</b>
-                    <p>2019-2022</p>
+                    <p><%=student.session%></p>
                   </div>
                 </div>
                 <div>
                   <div class="academic-icon" id="icon-13"></div>
                   <div class="icon-desc">
                     <b>Semester</b>
-                    <p>1</p>
+                    <p><%=student.current_semester%></p>
                   </div>
                 </div>
               </div>
@@ -176,36 +161,32 @@
             <div class="personal-info">
               <div class="row">
                 <div class="col-sm-12 col-md-6">
-                  <p><b>Date of Birth : </b>29/02/1992</p>
+                  <p><b>Date of Birth : </b><%=student.dob%></p>
                 </div>
                 <div class="col-sm-12 col-md-6">
-                  <p><b>Email : </b>ashish.xenon@gamil.com</p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-12 col-md-6">
-                  <p><b>Student Mob. : </b>8767895538</p>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                  <p><b>Gaurdian Mo : </b>8767800538</p>
+                  <p><b>Email : </b><%=student.email_id%></p>
                 </div>
               </div>
               <div class="row">
                 <div class="col-sm-12 col-md-6">
-                  <p><b>Adhaar Card No. : </b>87wrr345538</p>
+                  <p><b>Student Mob. : </b><%=student.student_mobile_no%></p>
                 </div>
                 <div class="col-sm-12 col-md-6">
-                  <p><b>Religion : </b>Christian</p>
+                  <p><b>Gaurdian Mo : </b><%=student.gaurdian_mobile_no%></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <p><b>Adhaar Card No. : </b><%=student.adhar_card_no%></p>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <p><b>Religion : </b><%=student.religion%></p>
                 </div>
               </div>
               <div class="row">
                 <div class="col-sm-12">
                   <b>Parmanent Address : </b>
-                  <p>White House, Don Bosco ITI 2nd lane,
-                    Khoratoli, Kokar
-                    Ranchi-834001
-                    JR
-                  </p>
+                  <p style="display : inline-block;"><%=student.permanent_address%></p>
                 </div>
               </div>
             </div>
@@ -218,26 +199,26 @@
             <div class="personal-info">
               <div class="row">
                 <div class="col-sm-12 col-md-6">
-                  <p><b>Minority : </b>YES</p>
+                  <p><b>Minority : </b><%=student.minority%></p>
                 </div>
                 <div class="col-sm-12 col-md-6">
-                  <p><b>Yearly Family Income : </b>1.2 Cr</p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-12 col-md-6">
-                  <p><b>Bank Name : </b>Swiss Bank</p>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                  <p><b>Branch Name : </b>Switzerland</p>
+                  <p><b>Yearly Family Income : </b><%=student.family_income%> Rs</p>
                 </div>
               </div>
               <div class="row">
                 <div class="col-sm-12 col-md-6">
-                  <p><b>Account No. : </b>98765432103456</p>
+                  <p><b>Bank Name : </b><%=student.bank_name%></p>
                 </div>
                 <div class="col-sm-12 col-md-6">
-                  <p><b>IFSC of Branch : </b>TY8765</p>
+                  <p><b>Branch Name : </b><%=student.bank_branch_name%></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <p><b>Account No. : </b><%=student.bank_account_no%></p>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <p><b>IFSC of Branch : </b><%=student.ifsc_code%></p>
                 </div>
               </div>
             </div>

@@ -131,14 +131,43 @@ app.post('/login/:role', (req,res) => {
 // student dashboard route
 app.get('/studentprofile', function(req,res){
   var tab_selected = req.query.tab
-  profile_data = {
-    name : req.session.name,
-    mobile : req.session.mob,
-    designation : req.session.design,
-    email : req.session.email,
-    loggedInAs : req.session.role
+  if(tab_selected == "student-profile")
+  {
+    var query="SELECT * FROM student_information INNER JOIN student_financial_info ON student_information.registration_no = student_financial_info.registration_no INNER JOIN academic_information ON student_information.registration_no = academic_information.registration_no WHERE student_information.registration_no = '"+req.session.reg_no+"'";
+    myConn.query(query, function(err, students)
+    {
+      if(err)
+      {
+          console.log(err);
+          res.redirect('/');
+      }
+      else {
+        console.log(students);
+        var student = students[0];
+        res.render('studentprofile', {student : student});
+      }
+    });
   }
-  res.render('studentprofile');
+  else if(tab_selected == "no-dues")                                            // code for "nodue" tab goes here
+  {
+    res.render('studentprofile');
+  }
+  else if(tab_selected == "fresh-scholarship")                                  // code for "apply scholarship" tab goes here
+  {
+    res.render('studentprofile');
+  }
+  else if(tab_selected == "applied-scholarship")                                // code for "view scholarship" tab goes here
+  {
+    res.render('studentprofile');
+  }
+  else if(tab_selected == "renewal-scholarship")                                // code for "renewal scholarship" tab goes here
+  {
+    res.render('studentprofile');
+  }
+  else if(tab_selected == "punishment-details")                                 // code for "view punishment status" tab goes here
+  {
+    res.render('studentprofile');
+  }
 });
 
 
@@ -158,32 +187,24 @@ app.get('/departmentprofile', function(req,res){
   }
   else if(tab_selected == "add-punishment")                                     // Add Punishment Tab
   {
-    const query = "SELECT student_name, registration_no FROM student_information";
-    myConn.query(query,(err, students) =>
-    {
-      if(err) console.log(err);
-      else {
-        data = {
-            students : students,
-            designation : req.session.design
-        };
-        res.render('departmentprofile', data);
-      }
-    });
+    data = {
+      designation : req.session.design
+    };
+    res.render('departmentprofile', data);
   }
   else if(tab_selected == "view-punishment")                                    // View Punishment Tab
   {
     data = {
       designation : req.session.design
     };
-    res.render('departmentprofile');
+    res.render('departmentprofile', data);
   }
   else if(tab_selected == "nodue-request")                                      // Nodues Tab
   {
     data = {
       designation : req.session.design
     };
-    res.render('departmentprofile');
+    res.render('departmentprofile', data);
   }
 });
 //--------------------------------------------------------------
