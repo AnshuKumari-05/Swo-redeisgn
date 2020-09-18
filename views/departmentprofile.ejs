@@ -107,6 +107,7 @@
 
       <!-- Body Container -->
       <div class="carousel-grid">
+        <% if(tab == "department-profile") { %>
         <!--===================================== Start of Profile ==================================== -->
         <div id="department-profile">
           <!-- Department Information -->
@@ -153,9 +154,10 @@
           <!-- End of Footer -->
         </div>
         <!--============================================ End of Profile ======================================-->
+        <% } %>
 
         <!--======================================== Start of Add Punishment ============================ -->
-        <% if(designation == "Chief Proctor") { %>
+        <% if(tab == "add-punishment") { %>
         <div id="add-punishment">
           <section>
             <h2>Chief Proctor's Office</h2>
@@ -178,81 +180,89 @@
 
           <section>
             <h4>Enter Student Data</h4>
-            <form class="scholarship-application" action="" method="post">
-              <input type="text" name="" placeholder="Registration No.">
-              <input type="text" name="" placeholder="Name">
-              <input type="text" name="" value="" placeholder="Ref. No. of Proctorial Board">
-              <div class="">
-                <label for="session">Counseling</label>
-                <select id="" name="session">
+            <form class="scholarship-application" action="/punishment/add" method="post">
+              <input type="text" name="registration_no" placeholder="Registration No.">
+              <input type="text" name="name" placeholder="Name">
+              <input type="text" name="ref_no_of_proctorial_board" value="" placeholder="Ref. No. of Proctorial Board">
+              <label>Black Dots</label>
+              <select name="black_dot">
+                <option value="One Black Dot">One Black Dot</option>
+                <option value="Two Black Dot">Two Black Dot</option>
+                <option value="Three Black Dot">Three Black Dot</option>
+                <option value="Four Black Dot">Four Black Dot</option>
+                <option value="Five Black Dot">Five Black Dot</option>
+              </select>
+              <div class="select-punishment">
+                <label>Counseling</label>
+                <select id="">
                   <option value="no">No</option>
                   <option value="yes">Yes</option>
                 </select>
-                <input class="reject-reason-tb" type="text" placeholder="Enter Councelling Duration">
+                <input class="reject-reason-tb" type="text" name="counseling" placeholder="Enter Councelling Duration">
               </div>
-              <div class="">
-                <label for="session">Yoga Classes</label>
-                <select id="" name="session">
+              <div class="select-punishment">
+                <label>Yoga Classes</label>
+                <select id="">
                   <option value="no">No</option>
                   <option value="yes">Yes</option>
                 </select>
-                <input class="reject-reason-tb" type="text" placeholder="Enter Duration of Yoga Classes">
+                <input class="reject-reason-tb" type="text" name="yoga_classes" placeholder="Enter Duration of Yoga Classes">
               </div>
-              <div class="">
-                <label for="session">Hostel Expulsion</label>
-                <select id="" name="session">
+              <div class="select-punishment">
+                <label>Hostel Expulsion</label>
+                <select id="">
                   <option value="no">No</option>
                   <option value="yes">Yes</option>
                 </select>
-                <input class="reject-reason-tb" type="text" placeholder="Enter Duration of Hostel Expulsion">
+                <input class="reject-reason-tb" type="text" name="expulsion_from_hostel" placeholder="Enter Duration of Hostel Expulsion">
               </div>
-              <div class="">
-                <label for="session">Institute Expulsion</label>
-                <select id="" name="session">
+              <div class="select-punishment">
+                <label>Institute Expulsion</label>
+                <select id="">
                   <option value="no">No</option>
                   <option value="yes">Yes</option>
                 </select>
-                <input class="reject-reason-tb" type="text" placeholder="Enter Duration of Institute Expulsion">
+                <input class="reject-reason-tb" type="text" name="expulsion_from_institute" placeholder="Enter Duration of Institute Expulsion">
               </div>
-              <div class="">
-                <label for="session">Debar Registration</label>
-                <select id="" name="session">
+              <div class="select-punishment">
+                <label>Debar Registration</label>
+                <select id="">
                   <option value="no">No</option>
                   <option value="yes">Yes</option>
                 </select>
-                <input class="reject-reason-tb" type="text" placeholder="Enter Details">
+                <input class="reject-reason-tb" type="text" name="debarred_f_reg" placeholder="Enter Details">
               </div>
-              <div class="">
-                <label for="session">Monetary Fine</label>
-                <select id="" name="session">
+              <div class="select-punishment">
+                <label>Monetary Fine</label>
+                <select id="">
                   <option value="no">No</option>
                   <option value="yes">Yes</option>
                 </select>
-                <input class="reject-reason-tb" type="text" placeholder="Enter Amount">
+                <input class="reject-reason-tb" type="text" name="monetary_fine" placeholder="Enter Amount">
               </div>
-              <div class="">
-                <label for="session">Inform Parents</label>
-                <select id="" name="session">
+              <div class="select-punishment">
+                <label>Inform Parents</label>
+                <select id="">
                   <option value="no">No</option>
                   <option value="yes">Yes</option>
                 </select>
-                <input class="reject-reason-tb" type="text" placeholder="Enter dispatch number & date of the letters">
+                <input class="reject-reason-tb" type="text" name="letter_t_parrents" placeholder="Enter dispatch number & date of the letters">
               </div>
-              <div class="">
-                <label for="session">Warning Letter to Student</label>
-                <select id="" name="session">
+              <div class="select-punishment">
+                <label>Warning Letter to Student</label>
+                <select id="">
                   <option value="no">No</option>
                   <option value="yes">Yes</option>
                 </select>
-                <input class="reject-reason-tb" type="text" placeholder="Enter dispatch number & date of the warning letter">
+                <input class="reject-reason-tb" type="text" name="w_letter_t_student" placeholder="Enter dispatch number & date of the warning letter">
               </div>
-              <div class="select-choice">
-                <label for="session">Other Punishment</label>
-                <select id="" name="session">
+              <div class="select-punishment">
+                <label>Other Punishment</label>
+                <select id="">
                   <option value="no">No</option>
                   <option value="yes">Yes</option>
                 </select>
-                <input class="reject-reason-tb" type="text" placeholder="Enter Details about the punishment.">
+                <input class="reject-reason-tb" type="text" name="other_punishment" placeholder="Enter Details about the punishment.">
               </div>
               <button class="btn-wide-green" type="submit">Add Student</button>
             </form>
@@ -264,7 +274,9 @@
           <!-- End of Footer -->
         </div>
         <!--===================================== End of add Punishment =============================================-->
+        <% } %>
 
+        <% if(tab == "view-punishment") { %>
         <!--==================================== Start of View Punishment ============================ -->
         <div id="view-punishment">
           <section>
@@ -298,7 +310,7 @@
         <!--============================== End of View Punishment ======================================-->
         <% } %>
 
-        <% if(designation != "Dean Academics" && designation != "FI (Admission)" && designation != "FI Examination") { %>
+        <% if(tab == "nodue-request") { %>
         <!--============================ Start of No Due  ====================================-->
         <div id="nodue-request">
           <section>

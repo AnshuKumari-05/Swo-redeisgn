@@ -644,6 +644,17 @@ $('#nodue-btn-reject').on('click', function(){
   $('.nodue-tab').removeClass("active");
   $('#nodue-tab-rejected').addClass("active");
 });
-
-
 //------------------------------------------------------------------------------
+
+//----------------------- UI Interaction Punishments (Department) --------------
+
+$('.select-punishment select').on('click', function(){
+  if($(this).val() == "yes")
+  {
+      $(this).siblings('.reject-reason-tb').addClass("active");
+  }
+  else {
+    $(this).siblings('.reject-reason-tb').removeClass("active");
+    $(this).siblings('.reject-reason-tb').val("");
+  }
+})

@@ -110,6 +110,7 @@
 
       <!-- Body Container -->
       <div class="carousel-grid">
+        <% if(tab == "student-profile") { %>
         <!--========================== Start of Student Profile ============================ -->
         <div id="student-profile">
           <!-- Academic Information -->
@@ -238,7 +239,9 @@
           <!-- End of Footer -->
         </div>
         <!--============================== End of Student Profile ======================================-->
+        <% } %>
 
+        <% if(tab == "fresh-scholarship") { %>
         <!--============================ Start of Fresh Scholarship ====================================-->
         <div id="fresh-scholarship">
           <section>
@@ -357,7 +360,9 @@
           <!-- End of Footer -->
         </div>
         <!--=============================== End of Fresh Scholarship ====================================================-->
+        <% } %>
 
+        <% if(tab == "applied-scholarship") { %>
         <!--================================================ Start of Applied Scholarship =======================================-->
         <div id="applied-scholarship">
           <section>
@@ -414,7 +419,9 @@
           <!-- End of Footer -->
         </div>
         <!--========================================== End of Applied Scholarship ==========================================-->
+        <% } %>
 
+        <% if(tab == "renewal-scholarship") { %>
         <!--======================================= Start of Renewal Scholarship ========================================-->
         <div id="renewal-scholarship">
           <section>
@@ -427,7 +434,9 @@
           <!-- End of Footer -->
         </div>
         <!--====================================== End of Renewal Scholarship ======================================-->
+        <% } %>
 
+        <% if(tab == "punishment-details") { %>
         <!--================================= Start of Punishment Details =======================================-->
         <div id="punishment-details">
           <section>
@@ -503,7 +512,9 @@
           <!-- End of Footer -->
         </div>
         <!--============================== End of Punishment Detail ========================================= -->
+        <% } %>
 
+        <% if(tab == "no-due") { %>
         <!-- =============================== Start of No Dues ============================================= -->
         <div id="no-dues">
           <section>
@@ -693,7 +704,7 @@
           <!-- End of Footer -->
         </div>
         <!--======================================= End of No Dues =======================================-->
-
+        <% } %>
       </div>
       <!-- End of Body Container -->
     </div>

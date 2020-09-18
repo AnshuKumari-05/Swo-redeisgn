@@ -144,29 +144,29 @@ app.get('/studentprofile', function(req,res){
       else {
         console.log(students);
         var student = students[0];
-        res.render('studentprofile', {student : student});
+        res.render('studentprofile', {student : student, tab : "student-profile"});
       }
     });
   }
   else if(tab_selected == "no-dues")                                            // code for "nodue" tab goes here
   {
-    res.render('studentprofile');
+    res.render('studentprofile', {tab : "no-due"});
   }
   else if(tab_selected == "fresh-scholarship")                                  // code for "apply scholarship" tab goes here
   {
-    res.render('studentprofile');
+    res.render('studentprofile', {tab : "fresh-scholarship"});
   }
   else if(tab_selected == "applied-scholarship")                                // code for "view scholarship" tab goes here
   {
-    res.render('studentprofile');
+    res.render('studentprofile', {tab : "applied-scholarship"});
   }
   else if(tab_selected == "renewal-scholarship")                                // code for "renewal scholarship" tab goes here
   {
-    res.render('studentprofile');
+    res.render('studentprofile', {tab : "renewal-scholarship"});
   }
   else if(tab_selected == "punishment-details")                                 // code for "view punishment status" tab goes here
   {
-    res.render('studentprofile');
+    res.render('studentprofile', {tab : "punishment-details"});
   }
 });
 
@@ -176,38 +176,50 @@ app.get('/departmentprofile', function(req,res){
   var tab_selected = req.query.tab                                              // stores what "tab" the reqest came from the route.
   if(tab_selected == "department-profile")                                      // interact with the database based on the Frontend tab the request came from.
   {
-    profile_data = {
+    data = {
       name : req.session.name,
       mobile : req.session.mob,
       designation : req.session.design,
       email : req.session.email,
-      loggedInAs : req.session.role
+      loggedInAs : req.session.role,
+      tab : "department-profile"
     };
-    res.render('departmentprofile', profile_data);                              // return profile data when profile tab is selected.
+    res.render('departmentprofile', data);                                      // return profile data when profile tab is selected.
   }
   else if(tab_selected == "add-punishment")                                     // Add Punishment Tab
   {
     data = {
-      designation : req.session.design
+      designation : req.session.design,
+      tab : "add-punishment"
     };
     res.render('departmentprofile', data);
   }
   else if(tab_selected == "view-punishment")                                    // View Punishment Tab
   {
     data = {
-      designation : req.session.design
+      designation : req.session.design,
+      tab : "view-punishment"
     };
     res.render('departmentprofile', data);
   }
   else if(tab_selected == "nodue-request")                                      // Nodues Tab
   {
     data = {
-      designation : req.session.design
+      designation : req.session.design,
+      tab : "nodue-request"
     };
     res.render('departmentprofile', data);
   }
 });
-//--------------------------------------------------------------
+//--------------------- POST Route to Add punishment records -------------------
+app.post('/punishment/add',function(req,res){
+  var punishment_details = req.body;                                            // object of student punishment details
+  console.log(punishment_details);
+
+
+  res.redirect('/departmentprofile?tab=add-punishment');  // go back here when data entry is successful
+});
+//------------------------------------------------------------------------------
 app.get('/logout', (req,res) => {
     req.session.destroy((err) => {
         if(err){

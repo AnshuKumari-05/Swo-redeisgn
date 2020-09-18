@@ -1508,6 +1508,9 @@ display: flex;
 .reject-reason-tb{
   display: none;
 }
+.reject-reason-tb.active{
+  display: block;
+}
 /*------------------------------------------------------------------------------
                         Student Profile Media Queries
 -------------------------------------------------------------------------------*/
