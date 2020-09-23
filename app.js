@@ -166,7 +166,19 @@ app.get('/studentprofile', function(req,res){
   }
   else if(tab_selected == "punishment-details")                                 // code for "view punishment status" tab goes here
   {
-    res.render('studentprofile', {tab : "punishment-details"});
+    query = "select * FROM punishment_detail where registration_no = '"+req.session.reg_no+"'";
+    myConn.query(query, function(err, punishment_details)
+    {
+      if(err)
+      {
+          console.log(err);
+          res.redirect('/');
+      }
+      else {
+        console.log(punishment_details);
+        res.render('studentprofile', {punishment_details : punishment_details, tab : "punishment-details"});
+      }
+    });
   }
 });
 
